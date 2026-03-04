@@ -278,3 +278,79 @@ class TDSConvEncoder(nn.Module):
 
     def forward(self, inputs: torch.Tensor) -> torch.Tensor:
         return self.tds_conv_blocks(inputs)  # (T, N, num_features)
+    
+
+class ResidualBlock1D(nn.Module):
+    """A single 1D residual block with two convolutions and a skip connection."""
+
+    def __init__(self, channels: int, kernel_size: int = 7, dropout: float = 0.1) -> None:
+        super().__init__()
+        padding = kernel_size // 2  # same padding to preserve T
+
+        self.block = nn.Sequential(
+            nn.Conv1d(channels, channels, kernel_size, padding=padding),
+            nn.BatchNorm1d(channels),
+            nn.ReLU(),
+            nn.Dropout(dropout),
+            nn.Conv1d(channels, channels, kernel_size, padding=padding),
+            nn.BatchNorm1d(channels),
+        )
+        self.relu = nn.ReLU()
+
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        # x shape: (N, C, T)
+        return self.relu(x + self.block(x))  # skip connection
+
+
+class ResNet1DEncoder(nn.Module):
+    """A 1D ResNet encoder for temporal EMG data.
+
+    Replaces TDSConvEncoder in the model pipeline.
+    Input:  (T, N, num_features)
+    Output: (T, N, num_features)
+
+    Args:
+        num_features: Feature dimension (from MultiBandRotationInvariantMLP output).
+        hidden_channels: Number of channels in the residual blocks.
+        num_blocks: Number of residual blocks to stack.
+        kernel_size: Kernel size for the 1D convolutions.
+        dropout: Dropout rate.
+    """
+
+    def __init__(
+        self,
+        num_features: int,
+        hidden_channels: int = 256,
+        num_blocks: int = 6,
+        kernel_size: int = 7,
+        dropout: float = 0.1,
+    ) -> None:
+        super().__init__()
+
+        self.input_proj = nn.Sequential(
+            nn.Conv1d(num_features, hidden_channels, kernel_size=1),
+            nn.BatchNorm1d(hidden_channels),
+            nn.ReLU(),
+        )
+
+        self.res_blocks = nn.Sequential(
+            *[
+                ResidualBlock1D(hidden_channels, kernel_size, dropout)
+                for _ in range(num_blocks)
+            ]
+        )
+
+        self.output_proj = nn.Sequential(
+            nn.Conv1d(hidden_channels, num_features, kernel_size=1),
+            nn.BatchNorm1d(num_features),
+            nn.ReLU(),
+        )
+
+    def forward(self, inputs: torch.Tensor) -> torch.Tensor:
+        x = inputs.permute(1, 2, 0) 
+
+        x = self.input_proj(x)       
+        x = self.res_blocks(x)       
+        x = self.output_proj(x)      
+
+        return x.permute(2, 0, 1)

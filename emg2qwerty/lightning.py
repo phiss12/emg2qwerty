@@ -23,6 +23,7 @@ from emg2qwerty.data import LabelData, WindowedEMGDataset
 from emg2qwerty.metrics import CharacterErrorRates
 from emg2qwerty.modules import (
     MultiBandRotationInvariantMLP,
+    ResNet1DEncoder,
     SpectrogramNorm,
     TDSConvEncoder,
 )
@@ -268,4 +269,36 @@ class TDSConvCTCModule(pl.LightningModule):
             self.parameters(),
             optimizer_config=self.hparams.optimizer,
             lr_scheduler_config=self.hparams.lr_scheduler,
+        )
+
+class ResNetCTCModule(TDSConvCTCModule):
+    def __init__(self, in_features, mlp_features, hidden_channels, num_blocks, kernel_size, optimizer, lr_scheduler, decoder):
+        super().__init__(
+            in_features=in_features,
+            mlp_features=mlp_features,
+            block_channels=[24],  
+            kernel_width=32,
+            optimizer=optimizer,
+            lr_scheduler=lr_scheduler,
+            decoder=decoder,
+        )
+
+        num_features = self.NUM_BANDS * mlp_features[-1]
+
+        self.model = nn.Sequential(
+            SpectrogramNorm(channels=self.NUM_BANDS * self.ELECTRODE_CHANNELS),
+            MultiBandRotationInvariantMLP(
+                in_features=in_features,
+                mlp_features=mlp_features,
+                num_bands=self.NUM_BANDS,
+            ),
+            nn.Flatten(start_dim=2),
+            ResNet1DEncoder(              
+                num_features=num_features,
+                hidden_channels=hidden_channels,
+                num_blocks=num_blocks,
+                kernel_size=kernel_size,
+            ),
+            nn.Linear(num_features, charset().num_classes),
+            nn.LogSoftmax(dim=-1),
         )
