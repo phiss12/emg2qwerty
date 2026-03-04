@@ -278,3 +278,60 @@ class TDSConvEncoder(nn.Module):
 
     def forward(self, inputs: torch.Tensor) -> torch.Tensor:
         return self.tds_conv_blocks(inputs)  # (T, N, num_features)
+
+# Positional encoding and transformer encoder
+class SinusoidalPositionalEncoding(nn.Module):
+    def __init__(self, d_model: int, dropout: float = 0.1, max_len: int = 20000):
+        super().__init__()
+        self.dropout = nn.Dropout(dropout)
+
+        pe = torch.zeros(max_len, d_model)
+        position = torch.arange(0, max_len, dtype=torch.float32).unsqueeze(1)
+        div_term = torch.exp(
+            torch.arange(0, d_model, 2, dtype=torch.float32) * (-math.log(10000.0) / d_model)
+        )
+        pe[:, 0::2] = torch.sin(position * div_term)
+        pe[:, 1::2] = torch.cos(position * div_term)
+        self.register_buffer("pe", pe, persistent=False)  # (max_len, d_model)
+
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        # x: (T, N, d_model)
+        T = x.size(0)
+        x = x + self.pe[:T].unsqueeze(1)  # (T,1,d_model)
+        return self.dropout(x)
+
+# A simple wrapper around `nn.TransformerEncoder` that applies positional encoding
+class TransformerEncoder(nn.Module):
+    """
+    Expects (T, N, d_model) and returns (T, N, d_model)
+    """
+    def __init__(
+        self,
+        d_model: int,
+        nhead: int = 8,
+        num_layers: int = 6,
+        dim_feedforward: int = 2048,
+        dropout: float = 0.1,
+        use_positional_encoding: bool = True,
+    ) -> None:
+        super().__init__()
+        self.pos = (
+            SinusoidalPositionalEncoding(d_model=d_model, dropout=dropout)
+            if use_positional_encoding
+            else nn.Identity()
+        )
+
+        enc_layer = nn.TransformerEncoderLayer(
+            d_model=d_model,
+            nhead=nhead,
+            dim_feedforward=dim_feedforward,
+            dropout=dropout,
+            batch_first=False,  
+            norm_first=True,
+        )
+        self.encoder = nn.TransformerEncoder(enc_layer, num_layers=num_layers)
+
+    def forward(self, x: torch.Tensor, src_key_padding_mask: torch.Tensor | None = None) -> torch.Tensor:
+        # x: (T, N, d_model)
+        x = self.pos(x)
+        return self.encoder(x, src_key_padding_mask=src_key_padding_mask)
