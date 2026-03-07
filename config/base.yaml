@@ -31,6 +31,12 @@ callbacks:
     mode: ${monitor_mode}
     save_last: True
     verbose: True
+  - _target_: pytorch_lightning.callbacks.EarlyStopping
+    monitor: ${monitor_metric}
+    patience: 20
+    mode: ${monitor_mode}
+    verbose: True
+    min_delta: 0.001
 
 dataset:
   root: ${hydra:runtime.cwd}/data
