@@ -5,36 +5,279 @@
 # LICENSE file in the root directory of this source tree.
 
 from collections.abc import Sequence
-from pathlib import Path
-from typing import Any, ClassVar
+import math
 
-import numpy as np
-import pytorch_lightning as pl
 import torch
-import torch.nn.functional as F
-from hydra.utils import instantiate
-from omegaconf import DictConfig
 from torch import nn
-from torch.utils.data import ConcatDataset, DataLoader
-from torchmetrics import MetricCollection
-
-from emg2qwerty import utils
-from emg2qwerty.charset import charset
-from emg2qwerty.data import LabelData, WindowedEMGDataset
-from emg2qwerty.metrics import CharacterErrorRates
-from emg2qwerty.modules import (
-    MultiBandRotationInvariantMLP,
-    SpectrogramNorm,
-    TDSConvEncoder,
-    TransformerEncoder,
-)
-from emg2qwerty.transforms import Transform
 
 
-# ---------------------------------------------------------------------------
-# Data module
-# ---------------------------------------------------------------------------
+class SpectrogramNorm(nn.Module):
+    """Applies 2D batch normalization over spectrogram per electrode channel per band.
 
+    Inputs must be of shape (T, N, num_bands, electrode_channels, frequency_bins).
+    Stats are computed over (N, freq, time) slices per channel.
+
+    Args:
+        channels: Total electrode channels across bands (num_bands * electrode_channels).
+    """
+
+    def __init__(self, channels: int) -> None:
+        super().__init__()
+        self.channels = channels
+        self.batch_norm = nn.BatchNorm2d(channels)
+
+    def forward(self, inputs: torch.Tensor) -> torch.Tensor:
+        T, N, bands, C, freq = inputs.shape
+        assert self.channels == bands * C
+
+        x = inputs.movedim(0, -1)           # (N, bands, C, freq, T)
+        x = x.reshape(N, bands * C, freq, T)
+        x = self.batch_norm(x)
+        x = x.reshape(N, bands, C, freq, T)
+        return x.movedim(-1, 0)             # (T, N, bands, C, freq)
+
+
+class RotationInvariantMLP(nn.Module):
+    """Applies an MLP over rotated electrode offsets and pools results.
+
+    For a single-band input of shape (T, N, C, ...), shifts electrode channels
+    by each offset in ``offsets``, passes all rotations through a shared MLP,
+    then pools over the rotation dimension.
+
+    Returns a tensor of shape (T, N, mlp_features[-1]).
+
+    Args:
+        in_features: Flattened input size from the channel dim onwards (C * ...).
+        mlp_features: Number of out_features per MLP layer.
+        pooling: 'mean' or 'max' pooling over rotations. (default: 'mean')
+        offsets: Electrode shift offsets. (default: (-1, 0, 1))
+    """
+
+    def __init__(
+        self,
+        in_features: int,
+        mlp_features: Sequence[int],
+        pooling: str = "mean",
+        offsets: Sequence[int] = (-1, 0, 1),
+    ) -> None:
+        super().__init__()
+
+        assert len(mlp_features) > 0
+        mlp: list[nn.Module] = []
+        for out_features in mlp_features:
+            mlp.extend([nn.Linear(in_features, out_features), nn.ReLU()])
+            in_features = out_features
+        self.mlp = nn.Sequential(*mlp)
+
+        assert pooling in {"max", "mean"}, f"Unsupported pooling: {pooling}"
+        self.pooling = pooling
+        self.offsets = offsets if len(offsets) > 0 else (0,)
+
+    def forward(self, inputs: torch.Tensor) -> torch.Tensor:
+        # (T, N, C, ...) -> stack rotations -> (T, N, rotation, C, ...)
+        x = torch.stack([inputs.roll(o, dims=2) for o in self.offsets], dim=2)
+        # (T, N, rotation, C, ...) -> (T, N, rotation, mlp_features[-1])
+        x = self.mlp(x.flatten(start_dim=3))
+        return x.max(dim=2).values if self.pooling == "max" else x.mean(dim=2)
+
+
+class MultiBandRotationInvariantMLP(nn.Module):
+    """Applies a separate `RotationInvariantMLP` per band.
+
+    Input shape: (T, N, num_bands, electrode_channels, ...)
+    Output shape: (T, N, num_bands, mlp_features[-1])
+
+    Args:
+        in_features: Flattened size from channel dim onwards (C * ...).
+        mlp_features: Number of out_features per MLP layer.
+        pooling: 'mean' or 'max' pooling over rotations. (default: 'mean')
+        offsets: Electrode shift offsets. (default: (-1, 0, 1))
+        num_bands: Number of bands. (default: 2)
+        stack_dim: Dimension along which bands are stacked. (default: 2)
+    """
+
+    def __init__(
+        self,
+        in_features: int,
+        mlp_features: Sequence[int],
+        pooling: str = "mean",
+        offsets: Sequence[int] = (-1, 0, 1),
+        num_bands: int = 2,
+        stack_dim: int = 2,
+    ) -> None:
+        super().__init__()
+        self.num_bands = num_bands
+        self.stack_dim = stack_dim
+        self.mlps = nn.ModuleList(
+            [
+                RotationInvariantMLP(
+                    in_features=in_features,
+                    mlp_features=mlp_features,
+                    pooling=pooling,
+                    offsets=offsets,
+                )
+                for _ in range(num_bands)
+            ]
+        )
+
+    def forward(self, inputs: torch.Tensor) -> torch.Tensor:
+        assert inputs.shape[self.stack_dim] == self.num_bands
+        outputs = [mlp(x) for mlp, x in zip(self.mlps, inputs.unbind(self.stack_dim))]
+        return torch.stack(outputs, dim=self.stack_dim)
+
+
+class TDSConv2dBlock(nn.Module):
+    """2D temporal convolution block from TDS (Hannun et al., arxiv.org/abs/1904.02619).
+
+    Args:
+        channels: Number of input/output channels. Invariant: channels * width == num_features.
+        width: Input width. Invariant: channels * width == num_features.
+        kernel_width: Kernel size of the temporal convolution.
+    """
+
+    def __init__(self, channels: int, width: int, kernel_width: int) -> None:
+        super().__init__()
+        self.channels = channels
+        self.width = width
+        self.conv2d = nn.Conv2d(channels, channels, kernel_size=(1, kernel_width))
+        self.relu = nn.ReLU()
+        self.layer_norm = nn.LayerNorm(channels * width)
+
+    def forward(self, inputs: torch.Tensor) -> torch.Tensor:
+        T_in, N, C = inputs.shape
+        x = inputs.movedim(0, -1).reshape(N, self.channels, self.width, T_in)
+        x = self.relu(self.conv2d(x))
+        x = x.reshape(N, C, -1).movedim(-1, 0)     # (T_out, N, C)
+        T_out = x.shape[0]
+        return self.layer_norm(x + inputs[-T_out:])  # skip + norm
+
+
+class TDSFullyConnectedBlock(nn.Module):
+    """Fully connected residual block from TDS (Hannun et al., arxiv.org/abs/1904.02619).
+
+    Args:
+        num_features: Feature size for input of shape (T, N, num_features).
+    """
+
+    def __init__(self, num_features: int) -> None:
+        super().__init__()
+        self.fc_block = nn.Sequential(
+            nn.Linear(num_features, num_features),
+            nn.ReLU(),
+            nn.Linear(num_features, num_features),
+        )
+        self.layer_norm = nn.LayerNorm(num_features)
+
+    def forward(self, inputs: torch.Tensor) -> torch.Tensor:
+        return self.layer_norm(self.fc_block(inputs) + inputs)
+
+
+class TDSConvEncoder(nn.Module):
+    """TDS convolutional encoder composing TDSConv2dBlock + TDSFullyConnectedBlock pairs.
+
+    Args:
+        num_features: Feature size for input of shape (T, N, num_features).
+        block_channels: Number of channels per TDSConv2dBlock.
+        kernel_width: Kernel size of the temporal convolutions.
+    """
+
+    def __init__(
+        self,
+        num_features: int,
+        block_channels: Sequence[int] = (24, 24, 24, 24),
+        kernel_width: int = 32,
+    ) -> None:
+        super().__init__()
+        assert len(block_channels) > 0
+        blocks: list[nn.Module] = []
+        for channels in block_channels:
+            assert num_features % channels == 0, \
+                "block_channels must evenly divide num_features"
+            blocks.extend([
+                TDSConv2dBlock(channels, num_features // channels, kernel_width),
+                TDSFullyConnectedBlock(num_features),
+            ])
+        self.tds_conv_blocks = nn.Sequential(*blocks)
+
+    def forward(self, inputs: torch.Tensor) -> torch.Tensor:
+        return self.tds_conv_blocks(inputs)  # (T, N, num_features)
+
+
+class SinusoidalPositionalEncoding(nn.Module):
+    """Sinusoidal positional encoding as in 'Attention Is All You Need'.
+
+    Args:
+        d_model: Model embedding dimension.
+        dropout: Dropout probability applied after adding positional encodings.
+        max_len: Maximum supported sequence length.
+    """
+
+    def __init__(self, d_model: int, dropout: float = 0.1, max_len: int = 20000) -> None:
+        super().__init__()
+        self.dropout = nn.Dropout(dropout)
+
+        pe = torch.zeros(max_len, d_model)
+        pos = torch.arange(0, max_len, dtype=torch.float32).unsqueeze(1)
+        div = torch.exp(
+            torch.arange(0, d_model, 2, dtype=torch.float32) * (-math.log(10000.0) / d_model)
+        )
+        pe[:, 0::2] = torch.sin(pos * div)
+        pe[:, 1::2] = torch.cos(pos * div)
+        self.register_buffer("pe", pe, persistent=False)  # (max_len, d_model)
+
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        # x: (T, N, d_model)
+        x = x + self.pe[: x.size(0)].unsqueeze(1)
+        return self.dropout(x)
+
+
+class TransformerEncoder(nn.Module):
+    """Transformer encoder with optional sinusoidal positional encoding.
+
+    Expects (T, N, d_model) and returns (T, N, d_model).
+
+    Args:
+        d_model: Model embedding dimension.
+        nhead: Number of attention heads.
+        num_layers: Number of TransformerEncoderLayer stacks.
+        dim_feedforward: Inner dimension of the feedforward sublayer.
+        dropout: Dropout probability.
+        use_positional_encoding: Whether to apply sinusoidal PE. (default: True)
+    """
+
+    def __init__(
+        self,
+        d_model: int,
+        nhead: int = 8,
+        num_layers: int = 6,
+        dim_feedforward: int = 2048,
+        dropout: float = 0.1,
+        use_positional_encoding: bool = True,
+    ) -> None:
+        super().__init__()
+        self.pos = (
+            SinusoidalPositionalEncoding(d_model=d_model, dropout=dropout)
+            if use_positional_encoding
+            else nn.Identity()
+        )
+        enc_layer = nn.TransformerEncoderLayer(
+            d_model=d_model,
+            nhead=nhead,
+            dim_feedforward=dim_feedforward,
+            dropout=dropout,
+            batch_first=False,
+            norm_first=True,    # pre-LN: more stable training
+        )
+        self.encoder = nn.TransformerEncoder(enc_layer, num_layers=num_layers)
+
+    def forward(
+        self,
+        x: torch.Tensor,
+        src_key_padding_mask: torch.Tensor | None = None,
+    ) -> torch.Tensor:
+        # x: (T, N, d_model)
+        x = self.pos(x)
+        return self.encoder(x, src_key_padding_mask=src_key_padding_mask)
 class WindowedEMGDataModule(pl.LightningDataModule):
     def __init__(
         self,
