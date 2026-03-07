@@ -214,12 +214,9 @@ class TDSConv2dBlock(nn.Module):
 
 
 class TDSFullyConnectedBlock(nn.Module):
-    """A fully connected block as per "Sequence-to-Sequence Speech
-    Recognition with Time-Depth Separable Convolutions, Hannun et al"
-    (https://arxiv.org/abs/1904.02619).
-
+    """
     Args:
-        num_features (int): ``num_features`` for an input of shape
+        num_features (int): num_features for an input of shape
             (T, N, num_features).
     """
 
@@ -241,16 +238,12 @@ class TDSFullyConnectedBlock(nn.Module):
 
 
 class TDSConvEncoder(nn.Module):
-    """A time depth-separable convolutional encoder composing a sequence
-    of `TDSConv2dBlock` and `TDSFullyConnectedBlock` as per
-    "Sequence-to-Sequence Speech Recognition with Time-Depth Separable
-    Convolutions, Hannun et al" (https://arxiv.org/abs/1904.02619).
-
+    """
     Args:
-        num_features (int): ``num_features`` for an input of shape
+        num_features (int): num_features for an input of shape
             (T, N, num_features).
         block_channels (list): A list of integers indicating the number
-            of channels per `TDSConv2dBlock`.
+            of channels per TDSConv2dBlock.
         kernel_width (int): The kernel size of the temporal convolutions.
     """
 
@@ -278,3 +271,32 @@ class TDSConvEncoder(nn.Module):
 
     def forward(self, inputs: torch.Tensor) -> torch.Tensor:
         return self.tds_conv_blocks(inputs)  # (T, N, num_features)
+
+
+class LSTMEncoder(nn.Module):
+    """
+    An LSTM-based encoder for EMG-to-Text.
+    Input shape: (T, N, num_features)
+    Output shape: (T, N, hidden_size * num_directions)
+    """
+
+    def __init__(self, num_features, hidden_size = 512, num_layers = 3, dropout = 0.2, bidirectional = True):
+        super().__init__()
+
+        self.lstm = nn.LSTM(
+            input_size=num_features,
+            hidden_size=hidden_size,
+            num_layers=num_layers,
+            dropout=dropout if num_layers > 1 else 0,
+            bidirectional=bidirectional,
+            batch_first=False
+        )
+
+        self.num_directions = 2 if bidirectional else 1
+        self.output_dim = hidden_size * self.num_directions
+
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        # x shape: (T, N, num_features)
+        # output shape: (T, N, hidden_size * num_directions)
+        output, (_, _) = self.lstm(x)
+        return output
