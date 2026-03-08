@@ -1,11 +1,12 @@
-# @package _global_
+#@package _global_
 module:
   _target_: emg2qwerty.lightning.TransformerCTCModule
   in_features: 528
-  mlp_features: [256]
-  nhead: 4
-  num_layers: 2
-  dim_feedforward: 512
+  mlp_features: [384]
+  d_model: 256
+  nhead: 8
+  num_layers: 4
+  dim_feedforward: 1024
   dropout: 0.1
 
 datamodule:
