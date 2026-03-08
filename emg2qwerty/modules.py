@@ -305,7 +305,7 @@ class ResidualBlock1D(nn.Module):
 class PositionalEncoding(nn.Module):
     """Adds positional encoding to the input embeddings."""
 
-    def __init__(self, num_features: int, max_len: int = 10000, dropout: float = 0.1) -> None:
+    def __init__(self, num_features: int, max_len: int = 200000, dropout: float = 0.1) -> None:
         super().__init__()
         self.dropout = nn.Dropout(dropout)
 
