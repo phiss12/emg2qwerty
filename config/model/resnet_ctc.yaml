@@ -3,8 +3,8 @@ module:
   _target_: emg2qwerty.lightning.ResNetCTCModule
   in_features: 528
   mlp_features: [384]
-  hidden_channels: 256
-  num_blocks: 6
+  hidden_channels: 384
+  num_blocks: 8
   kernel_size: 7
 
 datamodule:
