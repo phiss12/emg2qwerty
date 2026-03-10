@@ -3,6 +3,10 @@
 
 This course project is built upon the emg2qwerty work from Meta. The first section of this README provides some guidance for working with the repo and contains a running list of FAQs. **Note that the rest of the README is from the original repo and we encourage you to take a look at their work.**
 
+## Modifications performed by our Group. (Paul, Kamran, Akshat, Kat)
+
+We have created 3 other branches, namely transformer, resnet, lstm. Within these branches we have modified the lightning.py and modules.py, in addition to creating separate yaml files for each architecture. 
+
 ## Guiding Tips + FAQs
 _Last updated 2/13/2025_
 - Read through the Project Guidelines to ensure that you have a clear understanding of what we expect
