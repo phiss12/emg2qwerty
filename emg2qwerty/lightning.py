@@ -91,14 +91,15 @@ class WindowedEMGDataModule(pl.LightningDataModule):
                 WindowedEMGDataset(
                     hdf5_path,
                     transform=self.test_transform,
-                    # Feed entire session at once at test time for realism
-                    window_length=None,
-                    padding=(0, 0),
+                    # Use same windowing as validation for consistency
+                    window_length=self.window_length,  # Changed from None to 8000
+                    padding=self.padding,               # Changed from (0,0) to [1800, 200]
                     jitter=False,
                 )
                 for hdf5_path in self.test_sessions
             ]
         )
+       
 
     def _make_dataloader(self, dataset, *, batch_size: int, shuffle: bool) -> DataLoader:
         return DataLoader(
@@ -119,7 +120,11 @@ class WindowedEMGDataModule(pl.LightningDataModule):
 
     def test_dataloader(self) -> DataLoader:
         # batch_size=1: entire sessions fed at once; avoid padding influence on scores
-        return self._make_dataloader(self.test_dataset, batch_size=1, shuffle=False)
+        return self._make_dataloader(
+        self.test_dataset, 
+        batch_size=self.batch_size,  # Changed from 1
+        shuffle=False
+    )
 
 
 # ---------------------------------------------------------------------------
