@@ -1,902 +1,901 @@
-Epoch 0:  94% 120/127 [00:25<00:01,  4.69it/s, loss=122, v_num=0]
+Epoch 0: 100% 127/127 [00:44<00:00,  2.87it/s, loss=169, v_num=0]
+Epoch 0: 100% 127/127 [00:44<00:00,  2.87it/s, loss=169, v_num=0]Epoch 0, global step 120: 'val/CER' reached 533.54010 (best 533.54010), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=0-step=120.ckpt' as top 1
+Epoch 1:  94% 120/127 [00:24<00:01,  4.92it/s, loss=3.7, v_num=0] 
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 0: 100% 127/127 [00:27<00:00,  4.67it/s, loss=122, v_num=0]
-Epoch 0: 100% 127/127 [00:27<00:00,  4.67it/s, loss=122, v_num=0]Epoch 0, global step 120: 'val/CER' reached 1358.21887 (best 1358.21887), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=0-step=120.ckpt' as top 1
-Epoch 1:  94% 120/127 [00:23<00:01,  5.03it/s, loss=3.43, v_num=0]
+Epoch 1: 100% 127/127 [00:25<00:00,  4.92it/s, loss=3.7, v_num=0]
+Epoch 1: 100% 127/127 [00:25<00:00,  4.92it/s, loss=3.7, v_num=0]Epoch 1, global step 240: 'val/CER' reached 100.00000 (best 100.00000), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=1-step=240.ckpt' as top 1
+Epoch 2:  94% 120/127 [00:25<00:01,  4.65it/s, loss=3.33, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 1: 100% 127/127 [00:25<00:00,  5.02it/s, loss=3.43, v_num=0]
-Epoch 1: 100% 127/127 [00:25<00:00,  5.02it/s, loss=3.43, v_num=0]Epoch 1, global step 240: 'val/CER' reached 100.00000 (best 100.00000), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=1-step=240.ckpt' as top 1
-Epoch 2:  94% 120/127 [00:23<00:01,  5.08it/s, loss=3.25, v_num=0]
+Epoch 2: 100% 127/127 [00:27<00:00,  4.66it/s, loss=3.33, v_num=0]
+Epoch 2: 100% 127/127 [00:27<00:00,  4.66it/s, loss=3.33, v_num=0]Epoch 2, global step 360: 'val/CER' was not in top 1
+Epoch 3:  94% 120/127 [00:23<00:01,  5.05it/s, loss=3.4, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 2: 100% 127/127 [00:25<00:00,  5.06it/s, loss=3.25, v_num=0]
-Epoch 2: 100% 127/127 [00:25<00:00,  5.06it/s, loss=3.25, v_num=0]Epoch 2, global step 360: 'val/CER' was not in top 1
-Epoch 3:  94% 120/127 [00:24<00:01,  4.92it/s, loss=3.21, v_num=0]
+Epoch 3: 100% 127/127 [00:25<00:00,  5.04it/s, loss=3.4, v_num=0]
+Epoch 3: 100% 127/127 [00:25<00:00,  5.04it/s, loss=3.4, v_num=0]Epoch 3, global step 480: 'val/CER' was not in top 1
+Epoch 4:  94% 120/127 [00:23<00:01,  5.04it/s, loss=3.46, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 3: 100% 127/127 [00:25<00:00,  4.92it/s, loss=3.21, v_num=0]
-Epoch 3: 100% 127/127 [00:25<00:00,  4.92it/s, loss=3.21, v_num=0]Epoch 3, global step 480: 'val/CER' was not in top 1
-Epoch 4:  94% 120/127 [00:23<00:01,  5.12it/s, loss=3.19, v_num=0]
+Epoch 4: 100% 127/127 [00:25<00:00,  5.03it/s, loss=3.46, v_num=0]
+Epoch 4: 100% 127/127 [00:25<00:00,  5.03it/s, loss=3.46, v_num=0]Epoch 4, global step 600: 'val/CER' was not in top 1
+Epoch 5:  94% 120/127 [00:23<00:01,  5.15it/s, loss=3.35, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 4: 100% 127/127 [00:24<00:00,  5.09it/s, loss=3.19, v_num=0]
-Epoch 4: 100% 127/127 [00:24<00:00,  5.09it/s, loss=3.19, v_num=0]Epoch 4, global step 600: 'val/CER' was not in top 1
-Epoch 5:  94% 120/127 [00:23<00:01,  5.18it/s, loss=3.04, v_num=0]
+Epoch 5: 100% 127/127 [00:24<00:00,  5.13it/s, loss=3.35, v_num=0]
+Epoch 5: 100% 127/127 [00:24<00:00,  5.13it/s, loss=3.35, v_num=0]Epoch 5, global step 720: 'val/CER' was not in top 1
+Epoch 6:  94% 120/127 [00:23<00:01,  5.11it/s, loss=3.25, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 5: 100% 127/127 [00:24<00:00,  5.15it/s, loss=3.04, v_num=0]
-Epoch 5: 100% 127/127 [00:24<00:00,  5.15it/s, loss=3.04, v_num=0]Epoch 5, global step 720: 'val/CER' was not in top 1
-Epoch 6:  94% 120/127 [00:23<00:01,  5.12it/s, loss=3, v_num=0]   
+Epoch 6: 100% 127/127 [00:24<00:00,  5.10it/s, loss=3.25, v_num=0]
+Epoch 6: 100% 127/127 [00:24<00:00,  5.10it/s, loss=3.25, v_num=0]Epoch 6, global step 840: 'val/CER' was not in top 1
+Epoch 7:  94% 120/127 [00:23<00:01,  5.13it/s, loss=3.33, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 6: 100% 127/127 [00:24<00:00,  5.11it/s, loss=3, v_num=0]
-Epoch 6: 100% 127/127 [00:24<00:00,  5.11it/s, loss=3, v_num=0]Epoch 6, global step 840: 'val/CER' was not in top 1
-Epoch 7:  94% 120/127 [00:23<00:01,  5.12it/s, loss=2.91, v_num=0]
+Epoch 7: 100% 127/127 [00:24<00:00,  5.12it/s, loss=3.33, v_num=0]
+Epoch 7: 100% 127/127 [00:24<00:00,  5.12it/s, loss=3.33, v_num=0]Epoch 7, global step 960: 'val/CER' was not in top 1
+Epoch 8:  94% 120/127 [00:23<00:01,  5.16it/s, loss=3.32, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 7: 100% 127/127 [00:24<00:00,  5.09it/s, loss=2.91, v_num=0]
-Epoch 7: 100% 127/127 [00:24<00:00,  5.09it/s, loss=2.91, v_num=0]Epoch 7, global step 960: 'val/CER' was not in top 1
-Epoch 8:  94% 120/127 [00:23<00:01,  5.08it/s, loss=2.94, v_num=0]
+Epoch 8: 100% 127/127 [00:24<00:00,  5.14it/s, loss=3.32, v_num=0]
+Epoch 8: 100% 127/127 [00:24<00:00,  5.14it/s, loss=3.32, v_num=0]Epoch 8, global step 1080: 'val/CER' was not in top 1
+Epoch 9:  94% 120/127 [00:23<00:01,  5.13it/s, loss=3.2, v_num=0] 
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 8: 100% 127/127 [00:25<00:00,  5.05it/s, loss=2.94, v_num=0]
-Epoch 8: 100% 127/127 [00:25<00:00,  5.05it/s, loss=2.94, v_num=0]Epoch 8, global step 1080: 'val/CER' was not in top 1
-Epoch 9:  94% 120/127 [00:23<00:01,  5.15it/s, loss=2.69, v_num=0]
+Epoch 9: 100% 127/127 [00:24<00:00,  5.10it/s, loss=3.2, v_num=0]
+Epoch 9: 100% 127/127 [00:24<00:00,  5.10it/s, loss=3.2, v_num=0]Epoch 9, global step 1200: 'val/CER' was not in top 1
+Epoch 10:  94% 120/127 [00:23<00:01,  5.18it/s, loss=3.22, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 9: 100% 127/127 [00:24<00:00,  5.12it/s, loss=2.69, v_num=0]
-Epoch 9: 100% 127/127 [00:24<00:00,  5.12it/s, loss=2.69, v_num=0]Epoch 9, global step 1200: 'val/CER' reached 99.82278 (best 99.82278), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=9-step=1200.ckpt' as top 1
-Epoch 10:  94% 120/127 [00:23<00:01,  5.04it/s, loss=2.51, v_num=0]
+Epoch 10: 100% 127/127 [00:24<00:00,  5.16it/s, loss=3.22, v_num=0]
+Epoch 10: 100% 127/127 [00:24<00:00,  5.16it/s, loss=3.22, v_num=0]Epoch 10, global step 1320: 'val/CER' was not in top 1
+Epoch 11:  94% 120/127 [00:23<00:01,  5.10it/s, loss=3.06, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 10: 100% 127/127 [00:25<00:00,  5.03it/s, loss=2.51, v_num=0]
-Epoch 10: 100% 127/127 [00:25<00:00,  5.03it/s, loss=2.51, v_num=0]Epoch 10, global step 1320: 'val/CER' reached 96.16748 (best 96.16748), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=10-step=1320.ckpt' as top 1
-Epoch 11:  94% 120/127 [00:23<00:01,  5.10it/s, loss=2.33, v_num=0]
+Epoch 11: 100% 127/127 [00:24<00:00,  5.09it/s, loss=3.06, v_num=0]
+Epoch 11: 100% 127/127 [00:24<00:00,  5.09it/s, loss=3.06, v_num=0]Epoch 11, global step 1440: 'val/CER' was not in top 1
+Epoch 12:  94% 120/127 [00:23<00:01,  5.17it/s, loss=3.16, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 11: 100% 127/127 [00:24<00:00,  5.10it/s, loss=2.33, v_num=0]
-Epoch 11: 100% 127/127 [00:24<00:00,  5.10it/s, loss=2.33, v_num=0]Epoch 11, global step 1440: 'val/CER' reached 89.07842 (best 89.07842), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=11-step=1440.ckpt' as top 1
-Epoch 12:  94% 120/127 [00:23<00:01,  5.16it/s, loss=2.26, v_num=0]
+Epoch 12: 100% 127/127 [00:24<00:00,  5.15it/s, loss=3.16, v_num=0]
+Epoch 12: 100% 127/127 [00:24<00:00,  5.15it/s, loss=3.16, v_num=0]Epoch 12, global step 1560: 'val/CER' was not in top 1
+Epoch 13:  94% 120/127 [00:23<00:01,  5.17it/s, loss=3.05, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 12: 100% 127/127 [00:24<00:00,  5.13it/s, loss=2.26, v_num=0]
-Epoch 12: 100% 127/127 [00:24<00:00,  5.13it/s, loss=2.26, v_num=0]Epoch 12, global step 1560: 'val/CER' reached 82.25520 (best 82.25520), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=12-step=1560.ckpt' as top 1
-Epoch 13:  94% 120/127 [00:23<00:01,  5.18it/s, loss=2.05, v_num=0]
+Epoch 13: 100% 127/127 [00:24<00:00,  5.14it/s, loss=3.05, v_num=0]
+Epoch 13: 100% 127/127 [00:24<00:00,  5.14it/s, loss=3.05, v_num=0]Epoch 13, global step 1680: 'val/CER' was not in top 1
+Epoch 14:  94% 120/127 [00:23<00:01,  5.07it/s, loss=2.96, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 13: 100% 127/127 [00:24<00:00,  5.16it/s, loss=2.05, v_num=0]
-Epoch 13: 100% 127/127 [00:24<00:00,  5.16it/s, loss=2.05, v_num=0]Epoch 13, global step 1680: 'val/CER' reached 80.94816 (best 80.94816), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=13-step=1680.ckpt' as top 1
-Epoch 14:  94% 120/127 [00:23<00:01,  5.13it/s, loss=1.91, v_num=0]
+Epoch 14: 100% 127/127 [00:25<00:00,  5.06it/s, loss=2.96, v_num=0]
+Epoch 14: 100% 127/127 [00:25<00:00,  5.06it/s, loss=2.96, v_num=0]Epoch 14, global step 1800: 'val/CER' was not in top 1
+Epoch 15:  94% 120/127 [00:23<00:01,  5.21it/s, loss=2.94, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 14: 100% 127/127 [00:24<00:00,  5.11it/s, loss=1.91, v_num=0]
-Epoch 14: 100% 127/127 [00:24<00:00,  5.11it/s, loss=1.91, v_num=0]Epoch 14, global step 1800: 'val/CER' reached 71.44440 (best 71.44440), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=14-step=1800.ckpt' as top 1
-Epoch 15:  94% 120/127 [00:23<00:01,  5.07it/s, loss=1.82, v_num=0]
+Epoch 15: 100% 127/127 [00:24<00:00,  5.21it/s, loss=2.94, v_num=0]
+Epoch 15: 100% 127/127 [00:24<00:00,  5.20it/s, loss=2.94, v_num=0]Epoch 15, global step 1920: 'val/CER' was not in top 1
+Epoch 16:  94% 120/127 [00:23<00:01,  5.08it/s, loss=2.84, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 15: 100% 127/127 [00:25<00:00,  5.04it/s, loss=1.82, v_num=0]
-Epoch 15: 100% 127/127 [00:25<00:00,  5.04it/s, loss=1.82, v_num=0]Epoch 15, global step 1920: 'val/CER' reached 68.36509 (best 68.36509), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=15-step=1920.ckpt' as top 1
-Epoch 16:  94% 120/127 [00:23<00:01,  5.16it/s, loss=1.75, v_num=0]
+Epoch 16: 100% 127/127 [00:25<00:00,  5.08it/s, loss=2.84, v_num=0]
+Epoch 16: 100% 127/127 [00:25<00:00,  5.08it/s, loss=2.84, v_num=0]Epoch 16, global step 2040: 'val/CER' was not in top 1
+Epoch 17:  94% 120/127 [00:23<00:01,  5.15it/s, loss=2.69, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 16: 100% 127/127 [00:24<00:00,  5.14it/s, loss=1.75, v_num=0]
-Epoch 16: 100% 127/127 [00:24<00:00,  5.14it/s, loss=1.75, v_num=0]Epoch 16, global step 2040: 'val/CER' reached 67.70049 (best 67.70049), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=16-step=2040.ckpt' as top 1
-Epoch 17:  94% 120/127 [00:23<00:01,  5.07it/s, loss=1.63, v_num=0]
+Epoch 17: 100% 127/127 [00:24<00:00,  5.13it/s, loss=2.69, v_num=0]
+Epoch 17: 100% 127/127 [00:24<00:00,  5.13it/s, loss=2.69, v_num=0]Epoch 17, global step 2160: 'val/CER' reached 99.97784 (best 99.97784), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=17-step=2160.ckpt' as top 1
+Epoch 18:  94% 120/127 [00:23<00:01,  5.11it/s, loss=2.58, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 17: 100% 127/127 [00:25<00:00,  5.05it/s, loss=1.63, v_num=0]
-Epoch 17: 100% 127/127 [00:25<00:00,  5.05it/s, loss=1.63, v_num=0]Epoch 17, global step 2160: 'val/CER' reached 63.09260 (best 63.09260), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=17-step=2160.ckpt' as top 1
-Epoch 18:  94% 120/127 [00:23<00:01,  5.11it/s, loss=1.5, v_num=0] 
+Epoch 18: 100% 127/127 [00:24<00:00,  5.10it/s, loss=2.58, v_num=0]
+Epoch 18: 100% 127/127 [00:24<00:00,  5.09it/s, loss=2.58, v_num=0]Epoch 18, global step 2280: 'val/CER' reached 99.26894 (best 99.26894), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=18-step=2280.ckpt' as top 1
+Epoch 19:  94% 120/127 [00:23<00:01,  5.13it/s, loss=2.45, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 18: 100% 127/127 [00:24<00:00,  5.11it/s, loss=1.5, v_num=0]
-Epoch 18: 100% 127/127 [00:24<00:00,  5.11it/s, loss=1.5, v_num=0]Epoch 18, global step 2280: 'val/CER' reached 53.25653 (best 53.25653), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=18-step=2280.ckpt' as top 1
-Epoch 19:  94% 120/127 [00:23<00:01,  5.08it/s, loss=1.37, v_num=0]
+Epoch 19: 100% 127/127 [00:24<00:00,  5.11it/s, loss=2.45, v_num=0]
+Epoch 19: 100% 127/127 [00:24<00:00,  5.11it/s, loss=2.45, v_num=0]Epoch 19, global step 2400: 'val/CER' was not in top 1
+Epoch 20:  94% 120/127 [00:23<00:01,  5.19it/s, loss=2.37, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 19: 100% 127/127 [00:25<00:00,  5.05it/s, loss=1.37, v_num=0]
-Epoch 19: 100% 127/127 [00:25<00:00,  5.05it/s, loss=1.37, v_num=0]Epoch 19, global step 2400: 'val/CER' reached 38.56890 (best 38.56890), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=19-step=2400.ckpt' as top 1
-Epoch 20:  94% 120/127 [00:23<00:01,  5.04it/s, loss=1.23, v_num=0]
+Epoch 20: 100% 127/127 [00:24<00:00,  5.17it/s, loss=2.37, v_num=0]
+Epoch 20: 100% 127/127 [00:24<00:00,  5.17it/s, loss=2.37, v_num=0]Epoch 20, global step 2520: 'val/CER' reached 98.69296 (best 98.69296), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=20-step=2520.ckpt' as top 1
+Epoch 21:  94% 120/127 [00:23<00:01,  5.10it/s, loss=2.24, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 20: 100% 127/127 [00:25<00:00,  5.00it/s, loss=1.23, v_num=0]
-Epoch 20: 100% 127/127 [00:25<00:00,  5.00it/s, loss=1.23, v_num=0]Epoch 20, global step 2520: 'val/CER' reached 36.08773 (best 36.08773), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=20-step=2520.ckpt' as top 1
-Epoch 21:  94% 120/127 [00:23<00:01,  5.13it/s, loss=1.23, v_num=0]
+Epoch 21: 100% 127/127 [00:24<00:00,  5.09it/s, loss=2.24, v_num=0]
+Epoch 21: 100% 127/127 [00:24<00:00,  5.09it/s, loss=2.24, v_num=0]Epoch 21, global step 2640: 'val/CER' reached 93.48693 (best 93.48693), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=21-step=2640.ckpt' as top 1
+Epoch 22:  94% 120/127 [00:23<00:01,  5.12it/s, loss=2.16, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 21: 100% 127/127 [00:24<00:00,  5.09it/s, loss=1.23, v_num=0]
-Epoch 21: 100% 127/127 [00:24<00:00,  5.09it/s, loss=1.23, v_num=0]Epoch 21, global step 2640: 'val/CER' reached 34.89145 (best 34.89145), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=21-step=2640.ckpt' as top 1
-Epoch 22:  94% 120/127 [00:23<00:01,  5.13it/s, loss=1.16, v_num=0]
+Epoch 22: 100% 127/127 [00:24<00:00,  5.10it/s, loss=2.16, v_num=0]
+Epoch 22: 100% 127/127 [00:24<00:00,  5.10it/s, loss=2.16, v_num=0]Epoch 22, global step 2760: 'val/CER' reached 86.59725 (best 86.59725), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=22-step=2760.ckpt' as top 1
+Epoch 23:  94% 120/127 [00:23<00:01,  5.04it/s, loss=2.17, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 22: 100% 127/127 [00:24<00:00,  5.10it/s, loss=1.16, v_num=0]
-Epoch 22: 100% 127/127 [00:24<00:00,  5.10it/s, loss=1.16, v_num=0]Epoch 22, global step 2760: 'val/CER' reached 30.88170 (best 30.88170), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=22-step=2760.ckpt' as top 1
-Epoch 23:  94% 120/127 [00:23<00:01,  5.12it/s, loss=1.12, v_num=0]
+Epoch 23: 100% 127/127 [00:25<00:00,  5.03it/s, loss=2.17, v_num=0]
+Epoch 23: 100% 127/127 [00:25<00:00,  5.03it/s, loss=2.17, v_num=0]Epoch 23, global step 2880: 'val/CER' was not in top 1
+Epoch 24:  94% 120/127 [00:23<00:01,  5.14it/s, loss=2, v_num=0]   
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 23: 100% 127/127 [00:24<00:00,  5.10it/s, loss=1.12, v_num=0]
-Epoch 23: 100% 127/127 [00:24<00:00,  5.10it/s, loss=1.12, v_num=0]Epoch 23, global step 2880: 'val/CER' reached 28.55560 (best 28.55560), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=23-step=2880.ckpt' as top 1
-Epoch 24:  94% 120/127 [00:23<00:01,  5.13it/s, loss=1.07, v_num=0]
+Epoch 24: 100% 127/127 [00:24<00:00,  5.12it/s, loss=2, v_num=0]
+Epoch 24: 100% 127/127 [00:24<00:00,  5.12it/s, loss=2, v_num=0]Epoch 24, global step 3000: 'val/CER' reached 85.93266 (best 85.93266), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=24-step=3000.ckpt' as top 1
+Epoch 25:  94% 120/127 [00:23<00:01,  5.12it/s, loss=1.92, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 24: 100% 127/127 [00:24<00:00,  5.10it/s, loss=1.07, v_num=0]
-Epoch 24: 100% 127/127 [00:24<00:00,  5.10it/s, loss=1.07, v_num=0]Epoch 24, global step 3000: 'val/CER' was not in top 1
-Epoch 25:  94% 120/127 [00:23<00:01,  5.08it/s, loss=1.05, v_num=0]
+Epoch 25: 100% 127/127 [00:24<00:00,  5.11it/s, loss=1.92, v_num=0]
+Epoch 25: 100% 127/127 [00:24<00:00,  5.11it/s, loss=1.92, v_num=0]Epoch 25, global step 3120: 'val/CER' reached 81.56845 (best 81.56845), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=25-step=3120.ckpt' as top 1
+Epoch 26:  94% 120/127 [00:23<00:01,  5.09it/s, loss=1.89, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 25: 100% 127/127 [00:25<00:00,  5.04it/s, loss=1.05, v_num=0]
-Epoch 25: 100% 127/127 [00:25<00:00,  5.04it/s, loss=1.05, v_num=0]Epoch 25, global step 3120: 'val/CER' reached 27.51440 (best 27.51440), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=25-step=3120.ckpt' as top 1
-Epoch 26:  94% 120/127 [00:23<00:01,  5.15it/s, loss=0.987, v_num=0]
+Epoch 26: 100% 127/127 [00:25<00:00,  5.07it/s, loss=1.89, v_num=0]
+Epoch 26: 100% 127/127 [00:25<00:00,  5.07it/s, loss=1.89, v_num=0]Epoch 26, global step 3240: 'val/CER' reached 81.14754 (best 81.14754), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=26-step=3240.ckpt' as top 1
+Epoch 27:  94% 120/127 [00:23<00:01,  5.08it/s, loss=1.87, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 26: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.987, v_num=0]
-Epoch 26: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.987, v_num=0]Epoch 26, global step 3240: 'val/CER' reached 26.69473 (best 26.69473), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=26-step=3240.ckpt' as top 1
-Epoch 27:  94% 120/127 [00:23<00:01,  5.08it/s, loss=1.01, v_num=0] 
+Epoch 27: 100% 127/127 [00:25<00:00,  5.07it/s, loss=1.87, v_num=0]
+Epoch 27: 100% 127/127 [00:25<00:00,  5.07it/s, loss=1.87, v_num=0]Epoch 27, global step 3360: 'val/CER' reached 75.32122 (best 75.32122), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=27-step=3360.ckpt' as top 1
+Epoch 28:  94% 120/127 [00:23<00:01,  5.09it/s, loss=1.77, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 27: 100% 127/127 [00:25<00:00,  5.06it/s, loss=1.01, v_num=0]
-Epoch 27: 100% 127/127 [00:25<00:00,  5.06it/s, loss=1.01, v_num=0]Epoch 27, global step 3360: 'val/CER' was not in top 1
-Epoch 28:  94% 120/127 [00:23<00:01,  5.07it/s, loss=0.967, v_num=0]
+Epoch 28: 100% 127/127 [00:24<00:00,  5.08it/s, loss=1.77, v_num=0]
+Epoch 28: 100% 127/127 [00:24<00:00,  5.08it/s, loss=1.77, v_num=0]Epoch 28, global step 3480: 'val/CER' reached 72.90651 (best 72.90651), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=28-step=3480.ckpt' as top 1
+Epoch 29:  94% 120/127 [00:23<00:01,  5.11it/s, loss=1.73, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 28: 100% 127/127 [00:25<00:00,  5.06it/s, loss=0.967, v_num=0]
-Epoch 28: 100% 127/127 [00:25<00:00,  5.06it/s, loss=0.967, v_num=0]Epoch 28, global step 3480: 'val/CER' was not in top 1
-Epoch 29:  94% 120/127 [00:23<00:01,  5.12it/s, loss=0.941, v_num=0]
+Epoch 29: 100% 127/127 [00:24<00:00,  5.10it/s, loss=1.73, v_num=0]
+Epoch 29: 100% 127/127 [00:24<00:00,  5.10it/s, loss=1.73, v_num=0]Epoch 29, global step 3600: 'val/CER' reached 62.33939 (best 62.33939), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=29-step=3600.ckpt' as top 1
+Epoch 30:  94% 120/127 [00:23<00:01,  5.14it/s, loss=1.61, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 29: 100% 127/127 [00:24<00:00,  5.08it/s, loss=0.941, v_num=0]
-Epoch 29: 100% 127/127 [00:24<00:00,  5.08it/s, loss=0.941, v_num=0]Epoch 29, global step 3600: 'val/CER' was not in top 1
-Epoch 30:  94% 120/127 [00:23<00:01,  5.07it/s, loss=0.962, v_num=0]
+Epoch 30: 100% 127/127 [00:24<00:00,  5.13it/s, loss=1.61, v_num=0]
+Epoch 30: 100% 127/127 [00:24<00:00,  5.13it/s, loss=1.61, v_num=0]Epoch 30, global step 3720: 'val/CER' reached 57.86442 (best 57.86442), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=30-step=3720.ckpt' as top 1
+Epoch 31:  94% 120/127 [00:23<00:01,  5.12it/s, loss=1.63, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 30: 100% 127/127 [00:25<00:00,  5.05it/s, loss=0.962, v_num=0]
-Epoch 30: 100% 127/127 [00:25<00:00,  5.05it/s, loss=0.962, v_num=0]Epoch 30, global step 3720: 'val/CER' reached 26.07443 (best 26.07443), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=30-step=3720.ckpt' as top 1
-Epoch 31:  94% 120/127 [00:23<00:01,  5.11it/s, loss=0.825, v_num=0]
+Epoch 31: 100% 127/127 [00:24<00:00,  5.11it/s, loss=1.63, v_num=0]
+Epoch 31: 100% 127/127 [00:24<00:00,  5.11it/s, loss=1.63, v_num=0]Epoch 31, global step 3840: 'val/CER' reached 57.66504 (best 57.66504), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=31-step=3840.ckpt' as top 1
+Epoch 32:  94% 120/127 [00:23<00:01,  5.12it/s, loss=1.54, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 31: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.825, v_num=0]
-Epoch 31: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.825, v_num=0]Epoch 31, global step 3840: 'val/CER' reached 24.94462 (best 24.94462), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=31-step=3840.ckpt' as top 1
-Epoch 32:  94% 120/127 [00:23<00:01,  5.14it/s, loss=0.918, v_num=0]
+Epoch 32: 100% 127/127 [00:24<00:00,  5.12it/s, loss=1.54, v_num=0]
+Epoch 32: 100% 127/127 [00:24<00:00,  5.12it/s, loss=1.54, v_num=0]Epoch 32, global step 3960: 'val/CER' reached 48.56004 (best 48.56004), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=32-step=3960.ckpt' as top 1
+Epoch 33:  94% 120/127 [00:23<00:01,  5.09it/s, loss=1.54, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 32: 100% 127/127 [00:24<00:00,  5.13it/s, loss=0.918, v_num=0]
-Epoch 32: 100% 127/127 [00:24<00:00,  5.13it/s, loss=0.918, v_num=0]Epoch 32, global step 3960: 'val/CER' reached 24.65662 (best 24.65662), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=32-step=3960.ckpt' as top 1
-Epoch 33:  94% 120/127 [00:23<00:01,  5.12it/s, loss=0.858, v_num=0]
+Epoch 33: 100% 127/127 [00:25<00:00,  5.07it/s, loss=1.54, v_num=0]
+Epoch 33: 100% 127/127 [00:25<00:00,  5.07it/s, loss=1.54, v_num=0]Epoch 33, global step 4080: 'val/CER' reached 44.66105 (best 44.66105), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=33-step=4080.ckpt' as top 1
+Epoch 34:  94% 120/127 [00:23<00:01,  5.10it/s, loss=1.47, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 33: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.858, v_num=0]
-Epoch 33: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.858, v_num=0]Epoch 33, global step 4080: 'val/CER' reached 23.90341 (best 23.90341), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=33-step=4080.ckpt' as top 1
-Epoch 34:  94% 120/127 [00:23<00:01,  5.13it/s, loss=0.822, v_num=0]
+Epoch 34: 100% 127/127 [00:24<00:00,  5.10it/s, loss=1.47, v_num=0]
+Epoch 34: 100% 127/127 [00:24<00:00,  5.10it/s, loss=1.47, v_num=0]Epoch 34, global step 4200: 'val/CER' reached 43.93000 (best 43.93000), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=34-step=4200.ckpt' as top 1
+Epoch 35:  94% 120/127 [00:23<00:01,  5.13it/s, loss=1.51, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 34: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.822, v_num=0]
-Epoch 34: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.822, v_num=0]Epoch 34, global step 4200: 'val/CER' was not in top 1
-Epoch 35:  94% 120/127 [00:23<00:01,  5.13it/s, loss=0.827, v_num=0]
+Epoch 35: 100% 127/127 [00:24<00:00,  5.12it/s, loss=1.51, v_num=0]
+Epoch 35: 100% 127/127 [00:24<00:00,  5.12it/s, loss=1.51, v_num=0]Epoch 35, global step 4320: 'val/CER' was not in top 1
+Epoch 36:  94% 120/127 [00:23<00:01,  5.11it/s, loss=1.43, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 35: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.827, v_num=0]
-Epoch 35: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.827, v_num=0]Epoch 35, global step 4320: 'val/CER' was not in top 1
-Epoch 36:  94% 120/127 [00:23<00:01,  5.13it/s, loss=0.8, v_num=0]  
+Epoch 36: 100% 127/127 [00:24<00:00,  5.09it/s, loss=1.43, v_num=0]
+Epoch 36: 100% 127/127 [00:24<00:00,  5.09it/s, loss=1.43, v_num=0]Epoch 36, global step 4440: 'val/CER' reached 40.80638 (best 40.80638), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=36-step=4440.ckpt' as top 1
+Epoch 37:  94% 120/127 [00:23<00:01,  5.05it/s, loss=1.37, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 36: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.8, v_num=0]
-Epoch 36: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.8, v_num=0]Epoch 36, global step 4440: 'val/CER' was not in top 1
-Epoch 37:  94% 120/127 [00:23<00:01,  5.12it/s, loss=0.753, v_num=0]
+Epoch 37: 100% 127/127 [00:25<00:00,  5.04it/s, loss=1.37, v_num=0]
+Epoch 37: 100% 127/127 [00:25<00:00,  5.04it/s, loss=1.37, v_num=0]Epoch 37, global step 4560: 'val/CER' was not in top 1
+Epoch 38:  94% 120/127 [00:23<00:01,  5.04it/s, loss=1.32, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 37: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.753, v_num=0]
-Epoch 37: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.753, v_num=0]Epoch 37, global step 4560: 'val/CER' reached 22.13115 (best 22.13115), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=37-step=4560.ckpt' as top 1
-Epoch 38:  94% 120/127 [00:23<00:01,  5.17it/s, loss=0.824, v_num=0]
+Epoch 38: 100% 127/127 [00:25<00:00,  5.03it/s, loss=1.32, v_num=0]
+Epoch 38: 100% 127/127 [00:25<00:00,  5.03it/s, loss=1.32, v_num=0]Epoch 38, global step 4680: 'val/CER' reached 38.74612 (best 38.74612), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=38-step=4680.ckpt' as top 1
+Epoch 39:  94% 120/127 [00:23<00:01,  5.01it/s, loss=1.35, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 38: 100% 127/127 [00:24<00:00,  5.15it/s, loss=0.824, v_num=0]
-Epoch 38: 100% 127/127 [00:24<00:00,  5.15it/s, loss=0.824, v_num=0]Epoch 38, global step 4680: 'val/CER' was not in top 1
-Epoch 39:  94% 120/127 [00:23<00:01,  5.12it/s, loss=0.767, v_num=0]
+Epoch 39: 100% 127/127 [00:25<00:00,  5.00it/s, loss=1.35, v_num=0]
+Epoch 39: 100% 127/127 [00:25<00:00,  5.00it/s, loss=1.35, v_num=0]Epoch 39, global step 4800: 'val/CER' reached 37.63846 (best 37.63846), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=39-step=4800.ckpt' as top 1
+Epoch 40:  94% 120/127 [00:23<00:01,  5.01it/s, loss=1.33, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 39: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.767, v_num=0]
-Epoch 39: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.767, v_num=0]Epoch 39, global step 4800: 'val/CER' was not in top 1
-Epoch 40:  94% 120/127 [00:23<00:01,  5.14it/s, loss=0.725, v_num=0]
+Epoch 40: 100% 127/127 [00:25<00:00,  5.00it/s, loss=1.33, v_num=0]
+Epoch 40: 100% 127/127 [00:25<00:00,  5.00it/s, loss=1.33, v_num=0]Epoch 40, global step 4920: 'val/CER' reached 36.13203 (best 36.13203), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=40-step=4920.ckpt' as top 1
+Epoch 41:  94% 120/127 [00:23<00:01,  5.05it/s, loss=1.31, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 40: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.725, v_num=0]
-Epoch 40: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.725, v_num=0]Epoch 40, global step 4920: 'val/CER' was not in top 1
-Epoch 41:  94% 120/127 [00:23<00:01,  5.11it/s, loss=0.745, v_num=0]
+Epoch 41: 100% 127/127 [00:25<00:00,  5.02it/s, loss=1.31, v_num=0]
+Epoch 41: 100% 127/127 [00:25<00:00,  5.02it/s, loss=1.31, v_num=0]Epoch 41, global step 5040: 'val/CER' reached 35.04652 (best 35.04652), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=41-step=5040.ckpt' as top 1
+Epoch 42:  94% 120/127 [00:24<00:01,  4.92it/s, loss=1.28, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 41: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.745, v_num=0]
-Epoch 41: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.745, v_num=0]Epoch 41, global step 5040: 'val/CER' was not in top 1
-Epoch 42:  94% 120/127 [00:23<00:01,  5.07it/s, loss=0.677, v_num=0]
+Epoch 42: 100% 127/127 [00:25<00:00,  4.91it/s, loss=1.28, v_num=0]
+Epoch 42: 100% 127/127 [00:25<00:00,  4.91it/s, loss=1.28, v_num=0]Epoch 42, global step 5160: 'val/CER' was not in top 1
+Epoch 43:  94% 120/127 [00:23<00:01,  5.06it/s, loss=1.28, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 42: 100% 127/127 [00:25<00:00,  5.05it/s, loss=0.677, v_num=0]
-Epoch 42: 100% 127/127 [00:25<00:00,  5.05it/s, loss=0.677, v_num=0]Epoch 42, global step 5160: 'val/CER' was not in top 1
-Epoch 43:  94% 120/127 [00:23<00:01,  5.10it/s, loss=0.684, v_num=0]
+Epoch 43: 100% 127/127 [00:25<00:00,  5.04it/s, loss=1.28, v_num=0]
+Epoch 43: 100% 127/127 [00:25<00:00,  5.04it/s, loss=1.28, v_num=0]Epoch 43, global step 5280: 'val/CER' reached 32.80904 (best 32.80904), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=43-step=5280.ckpt' as top 1
+Epoch 44:  94% 120/127 [00:23<00:01,  5.01it/s, loss=1.27, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 43: 100% 127/127 [00:24<00:00,  5.08it/s, loss=0.684, v_num=0]
-Epoch 43: 100% 127/127 [00:24<00:00,  5.08it/s, loss=0.684, v_num=0]Epoch 43, global step 5280: 'val/CER' was not in top 1
-Epoch 44:  94% 120/127 [00:23<00:01,  5.12it/s, loss=0.659, v_num=0]
+Epoch 44: 100% 127/127 [00:25<00:00,  5.01it/s, loss=1.27, v_num=0]
+Epoch 44: 100% 127/127 [00:25<00:00,  5.01it/s, loss=1.27, v_num=0]Epoch 44, global step 5400: 'val/CER' was not in top 1
+Epoch 45:  94% 120/127 [00:23<00:01,  5.09it/s, loss=1.22, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 44: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.659, v_num=0]
-Epoch 44: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.659, v_num=0]Epoch 44, global step 5400: 'val/CER' was not in top 1
-Epoch 45:  94% 120/127 [00:23<00:01,  5.12it/s, loss=0.638, v_num=0]
+Epoch 45: 100% 127/127 [00:25<00:00,  5.08it/s, loss=1.22, v_num=0]
+Epoch 45: 100% 127/127 [00:25<00:00,  5.08it/s, loss=1.22, v_num=0]Epoch 45, global step 5520: 'val/CER' reached 30.63802 (best 30.63802), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=45-step=5520.ckpt' as top 1
+Epoch 46:  94% 120/127 [00:23<00:01,  5.04it/s, loss=1.2, v_num=0] 
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 45: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.638, v_num=0]
-Epoch 45: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.638, v_num=0]Epoch 45, global step 5520: 'val/CER' was not in top 1
-Epoch 46:  94% 120/127 [00:23<00:01,  5.07it/s, loss=0.659, v_num=0]
+Epoch 46: 100% 127/127 [00:25<00:00,  5.02it/s, loss=1.2, v_num=0]
+Epoch 46: 100% 127/127 [00:25<00:00,  5.02it/s, loss=1.2, v_num=0]Epoch 46, global step 5640: 'val/CER' was not in top 1
+Epoch 47:  94% 120/127 [00:23<00:01,  5.10it/s, loss=1.21, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 46: 100% 127/127 [00:25<00:00,  5.05it/s, loss=0.659, v_num=0]
-Epoch 46: 100% 127/127 [00:25<00:00,  5.05it/s, loss=0.659, v_num=0]Epoch 46, global step 5640: 'val/CER' reached 21.08994 (best 21.08994), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=46-step=5640.ckpt' as top 1
-Epoch 47:  94% 120/127 [00:23<00:01,  5.10it/s, loss=0.627, v_num=0]
+Epoch 47: 100% 127/127 [00:24<00:00,  5.09it/s, loss=1.21, v_num=0]
+Epoch 47: 100% 127/127 [00:24<00:00,  5.09it/s, loss=1.21, v_num=0]Epoch 47, global step 5760: 'val/CER' was not in top 1
+Epoch 48:  94% 120/127 [00:23<00:01,  5.07it/s, loss=1.18, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 47: 100% 127/127 [00:25<00:00,  5.08it/s, loss=0.627, v_num=0]
-Epoch 47: 100% 127/127 [00:25<00:00,  5.08it/s, loss=0.627, v_num=0]Epoch 47, global step 5760: 'val/CER' was not in top 1
-Epoch 48:  94% 120/127 [00:23<00:01,  5.13it/s, loss=0.597, v_num=0]
+Epoch 48: 100% 127/127 [00:25<00:00,  5.06it/s, loss=1.18, v_num=0]
+Epoch 48: 100% 127/127 [00:25<00:00,  5.06it/s, loss=1.18, v_num=0]Epoch 48, global step 5880: 'val/CER' was not in top 1
+Epoch 49:  94% 120/127 [00:23<00:01,  5.12it/s, loss=1.2, v_num=0] 
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 48: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.597, v_num=0]
-Epoch 48: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.597, v_num=0]Epoch 48, global step 5880: 'val/CER' was not in top 1
-Epoch 49:  94% 120/127 [00:23<00:01,  5.16it/s, loss=0.61, v_num=0] 
+Epoch 49: 100% 127/127 [00:24<00:00,  5.10it/s, loss=1.2, v_num=0]
+Epoch 49: 100% 127/127 [00:24<00:00,  5.10it/s, loss=1.2, v_num=0]Epoch 49, global step 6000: 'val/CER' was not in top 1
+Epoch 50:  94% 120/127 [00:23<00:01,  5.08it/s, loss=1.17, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 49: 100% 127/127 [00:24<00:00,  5.14it/s, loss=0.61, v_num=0]
-Epoch 49: 100% 127/127 [00:24<00:00,  5.14it/s, loss=0.61, v_num=0]Epoch 49, global step 6000: 'val/CER' was not in top 1
-Epoch 50:  94% 120/127 [00:23<00:01,  5.10it/s, loss=0.55, v_num=0] 
+Epoch 50: 100% 127/127 [00:25<00:00,  5.06it/s, loss=1.17, v_num=0]
+Epoch 50: 100% 127/127 [00:25<00:00,  5.06it/s, loss=1.17, v_num=0]Epoch 50, global step 6120: 'val/CER' reached 30.54940 (best 30.54940), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=50-step=6120.ckpt' as top 1
+Epoch 51:  94% 120/127 [00:23<00:01,  5.11it/s, loss=1.14, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 50: 100% 127/127 [00:25<00:00,  5.07it/s, loss=0.55, v_num=0]
-Epoch 50: 100% 127/127 [00:25<00:00,  5.07it/s, loss=0.55, v_num=0]Epoch 50, global step 6120: 'val/CER' was not in top 1
-Epoch 51:  94% 120/127 [00:23<00:01,  5.14it/s, loss=0.529, v_num=0]
+Epoch 51: 100% 127/127 [00:24<00:00,  5.09it/s, loss=1.14, v_num=0]
+Epoch 51: 100% 127/127 [00:24<00:00,  5.09it/s, loss=1.14, v_num=0]Epoch 51, global step 6240: 'val/CER' was not in top 1
+Epoch 52:  94% 120/127 [00:23<00:01,  5.12it/s, loss=1.14, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 51: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.529, v_num=0]
-Epoch 51: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.529, v_num=0]Epoch 51, global step 6240: 'val/CER' reached 20.69118 (best 20.69118), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=51-step=6240.ckpt' as top 1
-Epoch 52:  94% 120/127 [00:23<00:01,  5.17it/s, loss=0.526, v_num=0]
+Epoch 52: 100% 127/127 [00:24<00:00,  5.09it/s, loss=1.14, v_num=0]
+Epoch 52: 100% 127/127 [00:24<00:00,  5.09it/s, loss=1.14, v_num=0]Epoch 52, global step 6360: 'val/CER' was not in top 1
+Epoch 53:  94% 120/127 [00:23<00:01,  5.13it/s, loss=1.12, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 52: 100% 127/127 [00:24<00:00,  5.14it/s, loss=0.526, v_num=0]
-Epoch 52: 100% 127/127 [00:24<00:00,  5.14it/s, loss=0.526, v_num=0]Epoch 52, global step 6360: 'val/CER' was not in top 1
-Epoch 53:  94% 120/127 [00:23<00:01,  5.14it/s, loss=0.517, v_num=0]
+Epoch 53: 100% 127/127 [00:24<00:00,  5.10it/s, loss=1.12, v_num=0]
+Epoch 53: 100% 127/127 [00:24<00:00,  5.10it/s, loss=1.12, v_num=0]Epoch 53, global step 6480: 'val/CER' reached 28.91006 (best 28.91006), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=53-step=6480.ckpt' as top 1
+Epoch 54:  94% 120/127 [00:23<00:01,  5.03it/s, loss=1.07, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 53: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.517, v_num=0]
-Epoch 53: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.517, v_num=0]Epoch 53, global step 6480: 'val/CER' was not in top 1
-Epoch 54:  94% 120/127 [00:23<00:01,  5.14it/s, loss=0.49, v_num=0] 
+Epoch 54: 100% 127/127 [00:25<00:00,  5.01it/s, loss=1.07, v_num=0]
+Epoch 54: 100% 127/127 [00:25<00:00,  5.01it/s, loss=1.07, v_num=0]Epoch 54, global step 6600: 'val/CER' was not in top 1
+Epoch 55:  94% 120/127 [00:23<00:01,  5.14it/s, loss=1.09, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 54: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.49, v_num=0]
-Epoch 54: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.49, v_num=0]Epoch 54, global step 6600: 'val/CER' was not in top 1
-Epoch 55:  94% 120/127 [00:23<00:01,  5.16it/s, loss=0.502, v_num=0]
+Epoch 55: 100% 127/127 [00:24<00:00,  5.12it/s, loss=1.09, v_num=0]
+Epoch 55: 100% 127/127 [00:24<00:00,  5.12it/s, loss=1.09, v_num=0]Epoch 55, global step 6720: 'val/CER' was not in top 1
+Epoch 56:  94% 120/127 [00:23<00:01,  5.10it/s, loss=1.09, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 55: 100% 127/127 [00:24<00:00,  5.13it/s, loss=0.502, v_num=0]
-Epoch 55: 100% 127/127 [00:24<00:00,  5.13it/s, loss=0.502, v_num=0]Epoch 55, global step 6720: 'val/CER' reached 20.66903 (best 20.66903), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=55-step=6720.ckpt' as top 1
-Epoch 56:  94% 120/127 [00:23<00:01,  5.08it/s, loss=0.467, v_num=0]
+Epoch 56: 100% 127/127 [00:25<00:00,  5.08it/s, loss=1.09, v_num=0]
+Epoch 56: 100% 127/127 [00:25<00:00,  5.08it/s, loss=1.09, v_num=0]Epoch 56, global step 6840: 'val/CER' reached 28.11254 (best 28.11254), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=56-step=6840.ckpt' as top 1
+Epoch 57:  94% 120/127 [00:23<00:01,  5.08it/s, loss=1.1, v_num=0] 
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 56: 100% 127/127 [00:25<00:00,  5.03it/s, loss=0.467, v_num=0]
-Epoch 56: 100% 127/127 [00:25<00:00,  5.03it/s, loss=0.467, v_num=0]Epoch 56, global step 6840: 'val/CER' was not in top 1
-Epoch 57:  94% 120/127 [00:23<00:01,  5.16it/s, loss=0.464, v_num=0]
+Epoch 57: 100% 127/127 [00:25<00:00,  5.06it/s, loss=1.1, v_num=0]
+Epoch 57: 100% 127/127 [00:25<00:00,  5.06it/s, loss=1.1, v_num=0]Epoch 57, global step 6960: 'val/CER' was not in top 1
+Epoch 58:  94% 120/127 [00:23<00:01,  5.11it/s, loss=1.07, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 57: 100% 127/127 [00:24<00:00,  5.14it/s, loss=0.464, v_num=0]
-Epoch 57: 100% 127/127 [00:24<00:00,  5.14it/s, loss=0.464, v_num=0]Epoch 57, global step 6960: 'val/CER' was not in top 1
-Epoch 58:  94% 120/127 [00:23<00:01,  5.07it/s, loss=0.455, v_num=0]
+Epoch 58: 100% 127/127 [00:24<00:00,  5.10it/s, loss=1.07, v_num=0]
+Epoch 58: 100% 127/127 [00:24<00:00,  5.10it/s, loss=1.07, v_num=0]Epoch 58, global step 7080: 'val/CER' was not in top 1
+Epoch 59:  94% 120/127 [00:23<00:01,  5.16it/s, loss=1.05, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 58: 100% 127/127 [00:25<00:00,  5.04it/s, loss=0.455, v_num=0]
-Epoch 58: 100% 127/127 [00:25<00:00,  5.04it/s, loss=0.455, v_num=0]Epoch 58, global step 7080: 'val/CER' was not in top 1
-Epoch 59:  94% 120/127 [00:23<00:01,  5.17it/s, loss=0.466, v_num=0]
+Epoch 59: 100% 127/127 [00:24<00:00,  5.13it/s, loss=1.05, v_num=0]
+Epoch 59: 100% 127/127 [00:24<00:00,  5.13it/s, loss=1.05, v_num=0]Epoch 59, global step 7200: 'val/CER' was not in top 1
+Epoch 60:  94% 120/127 [00:23<00:01,  5.16it/s, loss=1.07, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 59: 100% 127/127 [00:24<00:00,  5.15it/s, loss=0.466, v_num=0]
-Epoch 59: 100% 127/127 [00:24<00:00,  5.15it/s, loss=0.466, v_num=0]Epoch 59, global step 7200: 'val/CER' was not in top 1
-Epoch 60:  94% 120/127 [00:23<00:01,  5.16it/s, loss=0.448, v_num=0]
+Epoch 60: 100% 127/127 [00:24<00:00,  5.15it/s, loss=1.07, v_num=0]
+Epoch 60: 100% 127/127 [00:24<00:00,  5.15it/s, loss=1.07, v_num=0]Epoch 60, global step 7320: 'val/CER' was not in top 1
+Epoch 61:  94% 120/127 [00:23<00:01,  5.14it/s, loss=1.08, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 60: 100% 127/127 [00:24<00:00,  5.13it/s, loss=0.448, v_num=0]
-Epoch 60: 100% 127/127 [00:24<00:00,  5.13it/s, loss=0.448, v_num=0]Epoch 60, global step 7320: 'val/CER' was not in top 1
-Epoch 61:  94% 120/127 [00:23<00:01,  5.11it/s, loss=0.441, v_num=0]
+Epoch 61: 100% 127/127 [00:24<00:00,  5.13it/s, loss=1.08, v_num=0]
+Epoch 61: 100% 127/127 [00:24<00:00,  5.13it/s, loss=1.08, v_num=0]Epoch 61, global step 7440: 'val/CER' was not in top 1
+Epoch 62:  94% 120/127 [00:23<00:01,  5.16it/s, loss=1.08, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 61: 100% 127/127 [00:24<00:00,  5.08it/s, loss=0.441, v_num=0]
-Epoch 61: 100% 127/127 [00:24<00:00,  5.08it/s, loss=0.441, v_num=0]Epoch 61, global step 7440: 'val/CER' was not in top 1
-Epoch 62:  94% 120/127 [00:23<00:01,  5.12it/s, loss=0.46, v_num=0] 
+Epoch 62: 100% 127/127 [00:24<00:00,  5.15it/s, loss=1.08, v_num=0]
+Epoch 62: 100% 127/127 [00:24<00:00,  5.15it/s, loss=1.08, v_num=0]Epoch 62, global step 7560: 'val/CER' was not in top 1
+Epoch 63:  94% 120/127 [00:23<00:01,  5.15it/s, loss=1.04, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 62: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.46, v_num=0]
-Epoch 62: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.46, v_num=0]Epoch 62, global step 7560: 'val/CER' was not in top 1
-Epoch 63:  94% 120/127 [00:23<00:01,  5.11it/s, loss=0.416, v_num=0]
+Epoch 63: 100% 127/127 [00:24<00:00,  5.13it/s, loss=1.04, v_num=0]
+Epoch 63: 100% 127/127 [00:24<00:00,  5.13it/s, loss=1.04, v_num=0]Epoch 63, global step 7680: 'val/CER' was not in top 1
+Epoch 64:  94% 120/127 [00:23<00:01,  5.11it/s, loss=1.08, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 63: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.416, v_num=0]
-Epoch 63: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.416, v_num=0]Epoch 63, global step 7680: 'val/CER' was not in top 1
-Epoch 64:  94% 120/127 [00:23<00:01,  5.07it/s, loss=0.386, v_num=0]
+Epoch 64: 100% 127/127 [00:24<00:00,  5.10it/s, loss=1.08, v_num=0]
+Epoch 64: 100% 127/127 [00:24<00:00,  5.10it/s, loss=1.08, v_num=0]Epoch 64, global step 7800: 'val/CER' was not in top 1
+Epoch 65:  94% 120/127 [00:23<00:01,  5.12it/s, loss=1.03, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 64: 100% 127/127 [00:25<00:00,  5.06it/s, loss=0.386, v_num=0]
-Epoch 64: 100% 127/127 [00:25<00:00,  5.06it/s, loss=0.386, v_num=0]Epoch 64, global step 7800: 'val/CER' reached 20.49180 (best 20.49180), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=64-step=7800.ckpt' as top 1
-Epoch 65:  94% 120/127 [00:23<00:01,  5.09it/s, loss=0.361, v_num=0]
+Epoch 65: 100% 127/127 [00:24<00:00,  5.11it/s, loss=1.03, v_num=0]
+Epoch 65: 100% 127/127 [00:24<00:00,  5.11it/s, loss=1.03, v_num=0]Epoch 65, global step 7920: 'val/CER' was not in top 1
+Epoch 66:  94% 120/127 [00:23<00:01,  5.09it/s, loss=1.02, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 65: 100% 127/127 [00:25<00:00,  5.07it/s, loss=0.361, v_num=0]
-Epoch 65: 100% 127/127 [00:25<00:00,  5.06it/s, loss=0.361, v_num=0]Epoch 65, global step 7920: 'val/CER' was not in top 1
-Epoch 66:  94% 120/127 [00:23<00:01,  5.13it/s, loss=0.393, v_num=0]
+Epoch 66: 100% 127/127 [00:25<00:00,  5.07it/s, loss=1.02, v_num=0]
+Epoch 66: 100% 127/127 [00:25<00:00,  5.07it/s, loss=1.02, v_num=0]Epoch 66, global step 8040: 'val/CER' was not in top 1
+Epoch 67:  94% 120/127 [00:23<00:01,  5.15it/s, loss=0.996, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 66: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.393, v_num=0]
-Epoch 66: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.393, v_num=0]Epoch 66, global step 8040: 'val/CER' was not in top 1
-Epoch 67:  94% 120/127 [00:23<00:01,  5.06it/s, loss=0.354, v_num=0]
+Epoch 67: 100% 127/127 [00:24<00:00,  5.13it/s, loss=0.996, v_num=0]
+Epoch 67: 100% 127/127 [00:24<00:00,  5.13it/s, loss=0.996, v_num=0]Epoch 67, global step 8160: 'val/CER' reached 27.29287 (best 27.29287), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=67-step=8160.ckpt' as top 1
+Epoch 68:  94% 120/127 [00:23<00:01,  5.07it/s, loss=1.01, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 67: 100% 127/127 [00:25<00:00,  5.05it/s, loss=0.354, v_num=0]
-Epoch 67: 100% 127/127 [00:25<00:00,  5.05it/s, loss=0.354, v_num=0]Epoch 67, global step 8160: 'val/CER' was not in top 1
-Epoch 68:  94% 120/127 [00:23<00:01,  5.15it/s, loss=0.386, v_num=0]
+Epoch 68: 100% 127/127 [00:25<00:00,  5.06it/s, loss=1.01, v_num=0]
+Epoch 68: 100% 127/127 [00:25<00:00,  5.06it/s, loss=1.01, v_num=0]Epoch 68, global step 8280: 'val/CER' was not in top 1
+Epoch 69:  94% 120/127 [00:23<00:01,  5.08it/s, loss=0.996, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 68: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.386, v_num=0]
-Epoch 68: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.386, v_num=0]Epoch 68, global step 8280: 'val/CER' reached 20.13735 (best 20.13735), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=68-step=8280.ckpt' as top 1
-Epoch 69:  94% 120/127 [00:23<00:01,  5.12it/s, loss=0.361, v_num=0]
+Epoch 69: 100% 127/127 [00:25<00:00,  5.08it/s, loss=0.996, v_num=0]
+Epoch 69: 100% 127/127 [00:25<00:00,  5.07it/s, loss=0.996, v_num=0]Epoch 69, global step 8400: 'val/CER' reached 25.63137 (best 25.63137), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=69-step=8400.ckpt' as top 1
+Epoch 70:  94% 120/127 [00:23<00:01,  5.08it/s, loss=0.961, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 69: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.361, v_num=0]
-Epoch 69: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.361, v_num=0]Epoch 69, global step 8400: 'val/CER' was not in top 1
-Epoch 70:  94% 120/127 [00:23<00:01,  5.14it/s, loss=0.331, v_num=0]
+Epoch 70: 100% 127/127 [00:25<00:00,  5.07it/s, loss=0.961, v_num=0]
+Epoch 70: 100% 127/127 [00:25<00:00,  5.07it/s, loss=0.961, v_num=0]Epoch 70, global step 8520: 'val/CER' was not in top 1
+Epoch 71:  94% 120/127 [00:23<00:01,  5.16it/s, loss=0.939, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 70: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.331, v_num=0]
-Epoch 70: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.331, v_num=0]Epoch 70, global step 8520: 'val/CER' was not in top 1
-Epoch 71:  94% 120/127 [00:23<00:01,  5.16it/s, loss=0.336, v_num=0]
+Epoch 71: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.939, v_num=0]
+Epoch 71: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.939, v_num=0]Epoch 71, global step 8640: 'val/CER' reached 24.92246 (best 24.92246), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=71-step=8640.ckpt' as top 1
+Epoch 72:  94% 120/127 [00:23<00:01,  5.09it/s, loss=0.978, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 71: 100% 127/127 [00:24<00:00,  5.14it/s, loss=0.336, v_num=0]
-Epoch 71: 100% 127/127 [00:24<00:00,  5.14it/s, loss=0.336, v_num=0]Epoch 71, global step 8640: 'val/CER' was not in top 1
-Epoch 72:  94% 120/127 [00:23<00:01,  5.12it/s, loss=0.339, v_num=0]
+Epoch 72: 100% 127/127 [00:25<00:00,  5.08it/s, loss=0.978, v_num=0]
+Epoch 72: 100% 127/127 [00:25<00:00,  5.08it/s, loss=0.978, v_num=0]Epoch 72, global step 8760: 'val/CER' was not in top 1
+Epoch 73:  94% 120/127 [00:23<00:01,  5.09it/s, loss=0.916, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 72: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.339, v_num=0]
-Epoch 72: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.339, v_num=0]Epoch 72, global step 8760: 'val/CER' was not in top 1
-Epoch 73:  94% 120/127 [00:23<00:01,  5.10it/s, loss=0.296, v_num=0]
+Epoch 73: 100% 127/127 [00:25<00:00,  5.08it/s, loss=0.916, v_num=0]
+Epoch 73: 100% 127/127 [00:25<00:00,  5.08it/s, loss=0.916, v_num=0]Epoch 73, global step 8880: 'val/CER' reached 24.23571 (best 24.23571), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=73-step=8880.ckpt' as top 1
+Epoch 74:  94% 120/127 [00:23<00:01,  5.08it/s, loss=0.914, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 73: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.296, v_num=0]
-Epoch 73: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.296, v_num=0]Epoch 73, global step 8880: 'val/CER' was not in top 1
-Epoch 74:  94% 120/127 [00:23<00:01,  5.10it/s, loss=0.289, v_num=0]
+Epoch 74: 100% 127/127 [00:25<00:00,  5.06it/s, loss=0.914, v_num=0]
+Epoch 74: 100% 127/127 [00:25<00:00,  5.06it/s, loss=0.914, v_num=0]Epoch 74, global step 9000: 'val/CER' was not in top 1
+Epoch 75:  94% 120/127 [00:23<00:01,  5.17it/s, loss=0.899, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 74: 100% 127/127 [00:25<00:00,  5.07it/s, loss=0.289, v_num=0]
-Epoch 74: 100% 127/127 [00:25<00:00,  5.07it/s, loss=0.289, v_num=0]Epoch 74, global step 9000: 'val/CER' was not in top 1
-Epoch 75:  94% 120/127 [00:23<00:01,  5.10it/s, loss=0.337, v_num=0]
+Epoch 75: 100% 127/127 [00:24<00:00,  5.15it/s, loss=0.899, v_num=0]
+Epoch 75: 100% 127/127 [00:24<00:00,  5.15it/s, loss=0.899, v_num=0]Epoch 75, global step 9120: 'val/CER' was not in top 1
+Epoch 76:  94% 120/127 [00:23<00:01,  5.11it/s, loss=0.913, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 75: 100% 127/127 [00:24<00:00,  5.08it/s, loss=0.337, v_num=0]
-Epoch 75: 100% 127/127 [00:24<00:00,  5.08it/s, loss=0.337, v_num=0]Epoch 75, global step 9120: 'val/CER' was not in top 1
-Epoch 76:  94% 120/127 [00:23<00:01,  5.08it/s, loss=0.305, v_num=0]
+Epoch 76: 100% 127/127 [00:24<00:00,  5.08it/s, loss=0.913, v_num=0]
+Epoch 76: 100% 127/127 [00:24<00:00,  5.08it/s, loss=0.913, v_num=0]Epoch 76, global step 9240: 'val/CER' was not in top 1
+Epoch 77:  94% 120/127 [00:23<00:01,  5.08it/s, loss=0.872, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 76: 100% 127/127 [00:25<00:00,  5.08it/s, loss=0.305, v_num=0]
-Epoch 76: 100% 127/127 [00:25<00:00,  5.07it/s, loss=0.305, v_num=0]Epoch 76, global step 9240: 'val/CER' was not in top 1
-Epoch 77:  94% 120/127 [00:23<00:01,  5.12it/s, loss=0.313, v_num=0]
+Epoch 77: 100% 127/127 [00:25<00:00,  5.06it/s, loss=0.872, v_num=0]
+Epoch 77: 100% 127/127 [00:25<00:00,  5.06it/s, loss=0.872, v_num=0]Epoch 77, global step 9360: 'val/CER' was not in top 1
+Epoch 78:  94% 120/127 [00:23<00:01,  5.12it/s, loss=0.868, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 77: 100% 127/127 [00:24<00:00,  5.08it/s, loss=0.313, v_num=0]
-Epoch 77: 100% 127/127 [00:24<00:00,  5.08it/s, loss=0.313, v_num=0]Epoch 77, global step 9360: 'val/CER' was not in top 1
-Epoch 78:  94% 120/127 [00:23<00:01,  5.10it/s, loss=0.301, v_num=0]
+Epoch 78: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.868, v_num=0]
+Epoch 78: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.868, v_num=0]Epoch 78, global step 9480: 'val/CER' reached 23.88126 (best 23.88126), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=78-step=9480.ckpt' as top 1
+Epoch 79:  94% 120/127 [00:23<00:01,  5.13it/s, loss=0.862, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 78: 100% 127/127 [00:24<00:00,  5.08it/s, loss=0.301, v_num=0]
-Epoch 78: 100% 127/127 [00:24<00:00,  5.08it/s, loss=0.301, v_num=0]Epoch 78, global step 9480: 'val/CER' was not in top 1
-Epoch 79:  94% 120/127 [00:23<00:01,  5.14it/s, loss=0.278, v_num=0]
+Epoch 79: 100% 127/127 [00:24<00:00,  5.08it/s, loss=0.862, v_num=0]
+Epoch 79: 100% 127/127 [00:24<00:00,  5.08it/s, loss=0.862, v_num=0]Epoch 79, global step 9600: 'val/CER' reached 23.63757 (best 23.63757), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=79-step=9600.ckpt' as top 1
+Epoch 80:  94% 120/127 [00:23<00:01,  5.08it/s, loss=0.869, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 79: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.278, v_num=0]
-Epoch 79: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.278, v_num=0]Epoch 79, global step 9600: 'val/CER' was not in top 1
-Epoch 80:  94% 120/127 [00:23<00:01,  5.12it/s, loss=0.265, v_num=0]
+Epoch 80: 100% 127/127 [00:25<00:00,  5.06it/s, loss=0.869, v_num=0]
+Epoch 80: 100% 127/127 [00:25<00:00,  5.06it/s, loss=0.869, v_num=0]Epoch 80, global step 9720: 'val/CER' was not in top 1
+Epoch 81:  94% 120/127 [00:23<00:01,  5.17it/s, loss=0.821, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 80: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.265, v_num=0]
-Epoch 80: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.265, v_num=0]Epoch 80, global step 9720: 'val/CER' reached 19.96012 (best 19.96012), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=80-step=9720.ckpt' as top 1
-Epoch 81:  94% 120/127 [00:23<00:01,  5.13it/s, loss=0.252, v_num=0]
+Epoch 81: 100% 127/127 [00:24<00:00,  5.15it/s, loss=0.821, v_num=0]
+Epoch 81: 100% 127/127 [00:24<00:00,  5.15it/s, loss=0.821, v_num=0]Epoch 81, global step 9840: 'val/CER' was not in top 1
+Epoch 82:  94% 120/127 [00:23<00:01,  5.15it/s, loss=0.828, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 81: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.252, v_num=0]
-Epoch 81: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.252, v_num=0]Epoch 81, global step 9840: 'val/CER' was not in top 1
-Epoch 82:  94% 120/127 [00:23<00:01,  5.14it/s, loss=0.276, v_num=0]
+Epoch 82: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.828, v_num=0]
+Epoch 82: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.828, v_num=0]Epoch 82, global step 9960: 'val/CER' was not in top 1
+Epoch 83:  94% 120/127 [00:23<00:01,  5.11it/s, loss=0.821, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 82: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.276, v_num=0]
-Epoch 82: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.276, v_num=0]Epoch 82, global step 9960: 'val/CER' was not in top 1
-Epoch 83:  94% 120/127 [00:23<00:01,  5.13it/s, loss=0.255, v_num=0]
+Epoch 83: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.821, v_num=0]
+Epoch 83: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.821, v_num=0]Epoch 83, global step 10080: 'val/CER' reached 23.01728 (best 23.01728), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=83-step=10080.ckpt' as top 1
+Epoch 84:  94% 120/127 [00:23<00:01,  5.14it/s, loss=0.837, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 83: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.255, v_num=0]
-Epoch 83: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.255, v_num=0]Epoch 83, global step 10080: 'val/CER' was not in top 1
-Epoch 84:  94% 120/127 [00:23<00:01,  5.13it/s, loss=0.255, v_num=0]
+Epoch 84: 100% 127/127 [00:24<00:00,  5.13it/s, loss=0.837, v_num=0]
+Epoch 84: 100% 127/127 [00:24<00:00,  5.13it/s, loss=0.837, v_num=0]Epoch 84, global step 10200: 'val/CER' was not in top 1
+Epoch 85:  94% 120/127 [00:23<00:01,  5.14it/s, loss=0.806, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 84: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.255, v_num=0]
-Epoch 84: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.255, v_num=0]Epoch 84, global step 10200: 'val/CER' was not in top 1
-Epoch 85:  94% 120/127 [00:23<00:01,  5.13it/s, loss=0.253, v_num=0]
+Epoch 85: 100% 127/127 [00:24<00:00,  5.13it/s, loss=0.806, v_num=0]
+Epoch 85: 100% 127/127 [00:24<00:00,  5.13it/s, loss=0.806, v_num=0]Epoch 85, global step 10320: 'val/CER' was not in top 1
+Epoch 86:  94% 120/127 [00:23<00:01,  5.12it/s, loss=0.784, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 85: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.253, v_num=0]
-Epoch 85: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.253, v_num=0]Epoch 85, global step 10320: 'val/CER' was not in top 1
-Epoch 86:  94% 120/127 [00:23<00:01,  5.13it/s, loss=0.262, v_num=0]
+Epoch 86: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.784, v_num=0]
+Epoch 86: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.784, v_num=0]Epoch 86, global step 10440: 'val/CER' reached 22.64067 (best 22.64067), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=86-step=10440.ckpt' as top 1
+Epoch 87:  94% 120/127 [00:23<00:01,  5.14it/s, loss=0.805, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 86: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.262, v_num=0]
-Epoch 86: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.262, v_num=0]Epoch 86, global step 10440: 'val/CER' was not in top 1
-Epoch 87:  94% 120/127 [00:23<00:01,  5.12it/s, loss=0.238, v_num=0]
+Epoch 87: 100% 127/127 [00:24<00:00,  5.13it/s, loss=0.805, v_num=0]
+Epoch 87: 100% 127/127 [00:24<00:00,  5.13it/s, loss=0.805, v_num=0]Epoch 87, global step 10560: 'val/CER' reached 22.41914 (best 22.41914), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=87-step=10560.ckpt' as top 1
+Epoch 88:  94% 120/127 [00:23<00:01,  5.11it/s, loss=0.812, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 87: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.238, v_num=0]
-Epoch 87: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.238, v_num=0]Epoch 87, global step 10560: 'val/CER' was not in top 1
-Epoch 88:  94% 120/127 [00:23<00:01,  5.09it/s, loss=0.232, v_num=0]
+Epoch 88: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.812, v_num=0]
+Epoch 88: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.812, v_num=0]Epoch 88, global step 10680: 'val/CER' was not in top 1
+Epoch 89:  94% 120/127 [00:23<00:01,  5.10it/s, loss=0.782, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 88: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.232, v_num=0]
-Epoch 88: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.232, v_num=0]Epoch 88, global step 10680: 'val/CER' was not in top 1
-Epoch 89:  94% 120/127 [00:23<00:01,  5.15it/s, loss=0.229, v_num=0]
+Epoch 89: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.782, v_num=0]
+Epoch 89: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.782, v_num=0]Epoch 89, global step 10800: 'val/CER' reached 21.75454 (best 21.75454), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=89-step=10800.ckpt' as top 1
+Epoch 90:  94% 120/127 [00:23<00:01,  5.04it/s, loss=0.772, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 89: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.229, v_num=0]
-Epoch 89: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.229, v_num=0]Epoch 89, global step 10800: 'val/CER' was not in top 1
-Epoch 90:  94% 120/127 [00:23<00:01,  5.16it/s, loss=0.238, v_num=0]
+Epoch 90: 100% 127/127 [00:25<00:00,  5.03it/s, loss=0.772, v_num=0]
+Epoch 90: 100% 127/127 [00:25<00:00,  5.03it/s, loss=0.772, v_num=0]Epoch 90, global step 10920: 'val/CER' was not in top 1
+Epoch 91:  94% 120/127 [00:23<00:01,  5.15it/s, loss=0.745, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 90: 100% 127/127 [00:24<00:00,  5.14it/s, loss=0.238, v_num=0]
-Epoch 90: 100% 127/127 [00:24<00:00,  5.14it/s, loss=0.238, v_num=0]Epoch 90, global step 10920: 'val/CER' was not in top 1
-Epoch 91:  94% 120/127 [00:23<00:01,  5.18it/s, loss=0.235, v_num=0]
+Epoch 91: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.745, v_num=0]
+Epoch 91: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.745, v_num=0]Epoch 91, global step 11040: 'val/CER' reached 21.62162 (best 21.62162), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=91-step=11040.ckpt' as top 1
+Epoch 92:  94% 120/127 [00:23<00:01,  5.10it/s, loss=0.747, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 91: 100% 127/127 [00:24<00:00,  5.15it/s, loss=0.235, v_num=0]
-Epoch 91: 100% 127/127 [00:24<00:00,  5.15it/s, loss=0.235, v_num=0]Epoch 91, global step 11040: 'val/CER' was not in top 1
-Epoch 92:  94% 120/127 [00:23<00:01,  5.16it/s, loss=0.223, v_num=0]
+Epoch 92: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.747, v_num=0]
+Epoch 92: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.747, v_num=0]Epoch 92, global step 11160: 'val/CER' reached 21.28932 (best 21.28932), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=92-step=11160.ckpt' as top 1
+Epoch 93:  94% 120/127 [00:23<00:01,  5.10it/s, loss=0.725, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 92: 100% 127/127 [00:24<00:00,  5.14it/s, loss=0.223, v_num=0]
-Epoch 92: 100% 127/127 [00:24<00:00,  5.14it/s, loss=0.223, v_num=0]Epoch 92, global step 11160: 'val/CER' was not in top 1
-Epoch 93:  94% 120/127 [00:23<00:01,  5.10it/s, loss=0.22, v_num=0] 
+Epoch 93: 100% 127/127 [00:25<00:00,  5.08it/s, loss=0.725, v_num=0]
+Epoch 93: 100% 127/127 [00:25<00:00,  5.08it/s, loss=0.725, v_num=0]Epoch 93, global step 11280: 'val/CER' reached 20.77980 (best 20.77980), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=93-step=11280.ckpt' as top 1
+Epoch 94:  94% 120/127 [00:23<00:01,  5.14it/s, loss=0.72, v_num=0] 
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 93: 100% 127/127 [00:25<00:00,  5.08it/s, loss=0.22, v_num=0]
-Epoch 93: 100% 127/127 [00:25<00:00,  5.08it/s, loss=0.22, v_num=0]Epoch 93, global step 11280: 'val/CER' was not in top 1
-Epoch 94:  94% 120/127 [00:23<00:01,  5.08it/s, loss=0.186, v_num=0]
+Epoch 94: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.72, v_num=0]
+Epoch 94: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.72, v_num=0]Epoch 94, global step 11400: 'val/CER' was not in top 1
+Epoch 95:  94% 120/127 [00:23<00:01,  5.15it/s, loss=0.702, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 94: 100% 127/127 [00:25<00:00,  5.05it/s, loss=0.186, v_num=0]
-Epoch 94: 100% 127/127 [00:25<00:00,  5.05it/s, loss=0.186, v_num=0]Epoch 94, global step 11400: 'val/CER' was not in top 1
-Epoch 95:  94% 120/127 [00:23<00:01,  5.18it/s, loss=0.225, v_num=0]
+Epoch 95: 100% 127/127 [00:24<00:00,  5.15it/s, loss=0.702, v_num=0]
+Epoch 95: 100% 127/127 [00:24<00:00,  5.15it/s, loss=0.702, v_num=0]Epoch 95, global step 11520: 'val/CER' was not in top 1
+Epoch 96:  94% 120/127 [00:23<00:01,  5.12it/s, loss=0.718, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 95: 100% 127/127 [00:24<00:00,  5.15it/s, loss=0.225, v_num=0]
-Epoch 95: 100% 127/127 [00:24<00:00,  5.15it/s, loss=0.225, v_num=0]Epoch 95, global step 11520: 'val/CER' was not in top 1
-Epoch 96:  94% 120/127 [00:23<00:01,  5.11it/s, loss=0.211, v_num=0]
+Epoch 96: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.718, v_num=0]
+Epoch 96: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.718, v_num=0]Epoch 96, global step 11640: 'val/CER' was not in top 1
+Epoch 97:  94% 120/127 [00:23<00:01,  5.09it/s, loss=0.671, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 96: 100% 127/127 [00:25<00:00,  5.07it/s, loss=0.211, v_num=0]
-Epoch 96: 100% 127/127 [00:25<00:00,  5.07it/s, loss=0.211, v_num=0]Epoch 96, global step 11640: 'val/CER' was not in top 1
-Epoch 97:  94% 120/127 [00:23<00:01,  5.13it/s, loss=0.197, v_num=0]
+Epoch 97: 100% 127/127 [00:25<00:00,  5.06it/s, loss=0.671, v_num=0]
+Epoch 97: 100% 127/127 [00:25<00:00,  5.06it/s, loss=0.671, v_num=0]Epoch 97, global step 11760: 'val/CER' reached 19.47275 (best 19.47275), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=97-step=11760.ckpt' as top 1
+Epoch 98:  94% 120/127 [00:23<00:01,  5.13it/s, loss=0.686, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 97: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.197, v_num=0]
-Epoch 97: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.197, v_num=0]Epoch 97, global step 11760: 'val/CER' reached 19.56137 (best 19.56137), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=97-step=11760.ckpt' as top 1
-Epoch 98:  94% 120/127 [00:23<00:01,  5.09it/s, loss=0.201, v_num=0]
+Epoch 98: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.686, v_num=0]
+Epoch 98: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.686, v_num=0]Epoch 98, global step 11880: 'val/CER' was not in top 1
+Epoch 99:  94% 120/127 [00:23<00:01,  5.12it/s, loss=0.66, v_num=0] 
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 98: 100% 127/127 [00:25<00:00,  5.06it/s, loss=0.201, v_num=0]
-Epoch 98: 100% 127/127 [00:25<00:00,  5.06it/s, loss=0.201, v_num=0]Epoch 98, global step 11880: 'val/CER' was not in top 1
-Epoch 99:  94% 120/127 [00:23<00:01,  5.08it/s, loss=0.199, v_num=0]
+Epoch 99: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.66, v_num=0]
+Epoch 99: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.66, v_num=0]Epoch 99, global step 12000: 'val/CER' was not in top 1
+Epoch 100:  94% 120/127 [00:23<00:01,  5.19it/s, loss=0.638, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 99: 100% 127/127 [00:25<00:00,  5.04it/s, loss=0.199, v_num=0]
-Epoch 99: 100% 127/127 [00:25<00:00,  5.04it/s, loss=0.199, v_num=0]Epoch 99, global step 12000: 'val/CER' was not in top 1
-Epoch 100:  94% 120/127 [00:23<00:01,  5.11it/s, loss=0.194, v_num=0]
+Epoch 100: 100% 127/127 [00:24<00:00,  5.19it/s, loss=0.638, v_num=0]
+Epoch 100: 100% 127/127 [00:24<00:00,  5.19it/s, loss=0.638, v_num=0]Epoch 100, global step 12120: 'val/CER' was not in top 1
+Epoch 101:  94% 120/127 [00:23<00:01,  5.18it/s, loss=0.643, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 100: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.194, v_num=0]
-Epoch 100: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.194, v_num=0]Epoch 100, global step 12120: 'val/CER' was not in top 1
-Epoch 101:  94% 120/127 [00:23<00:01,  5.09it/s, loss=0.188, v_num=0]
+Epoch 101: 100% 127/127 [00:24<00:00,  5.17it/s, loss=0.643, v_num=0]
+Epoch 101: 100% 127/127 [00:24<00:00,  5.17it/s, loss=0.643, v_num=0]Epoch 101, global step 12240: 'val/CER' reached 18.76385 (best 18.76385), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=101-step=12240.ckpt' as top 1
+Epoch 102:  94% 120/127 [00:23<00:01,  5.09it/s, loss=0.678, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 101: 100% 127/127 [00:25<00:00,  5.06it/s, loss=0.188, v_num=0]
-Epoch 101: 100% 127/127 [00:25<00:00,  5.06it/s, loss=0.188, v_num=0]Epoch 101, global step 12240: 'val/CER' was not in top 1
-Epoch 102:  94% 120/127 [00:23<00:01,  5.14it/s, loss=0.24, v_num=0] 
+Epoch 102: 100% 127/127 [00:25<00:00,  5.08it/s, loss=0.678, v_num=0]
+Epoch 102: 100% 127/127 [00:25<00:00,  5.08it/s, loss=0.678, v_num=0]Epoch 102, global step 12360: 'val/CER' was not in top 1
+Epoch 103:  94% 120/127 [00:23<00:01,  5.15it/s, loss=0.658, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 102: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.24, v_num=0]
-Epoch 102: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.24, v_num=0]Epoch 102, global step 12360: 'val/CER' was not in top 1
-Epoch 103:  94% 120/127 [00:23<00:01,  5.11it/s, loss=0.202, v_num=0]
+Epoch 103: 100% 127/127 [00:24<00:00,  5.15it/s, loss=0.658, v_num=0]
+Epoch 103: 100% 127/127 [00:24<00:00,  5.15it/s, loss=0.658, v_num=0]Epoch 103, global step 12480: 'val/CER' was not in top 1
+Epoch 104:  94% 120/127 [00:23<00:01,  5.11it/s, loss=0.627, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 103: 100% 127/127 [00:25<00:00,  5.07it/s, loss=0.202, v_num=0]
-Epoch 103: 100% 127/127 [00:25<00:00,  5.07it/s, loss=0.202, v_num=0]Epoch 103, global step 12480: 'val/CER' was not in top 1
-Epoch 104:  94% 120/127 [00:23<00:01,  5.13it/s, loss=0.189, v_num=0]
+Epoch 104: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.627, v_num=0]
+Epoch 104: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.627, v_num=0]Epoch 104, global step 12600: 'val/CER' was not in top 1
+Epoch 105:  94% 120/127 [00:23<00:01,  5.15it/s, loss=0.64, v_num=0] 
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 104: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.189, v_num=0]
-Epoch 104: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.189, v_num=0]Epoch 104, global step 12600: 'val/CER' was not in top 1
-Epoch 105:  94% 120/127 [00:23<00:01,  5.10it/s, loss=0.185, v_num=0]
+Epoch 105: 100% 127/127 [00:24<00:00,  5.13it/s, loss=0.64, v_num=0]
+Epoch 105: 100% 127/127 [00:24<00:00,  5.13it/s, loss=0.64, v_num=0]Epoch 105, global step 12720: 'val/CER' was not in top 1
+Epoch 106:  94% 120/127 [00:23<00:01,  5.13it/s, loss=0.634, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 105: 100% 127/127 [00:25<00:00,  5.08it/s, loss=0.185, v_num=0]
-Epoch 105: 100% 127/127 [00:25<00:00,  5.08it/s, loss=0.185, v_num=0]Epoch 105, global step 12720: 'val/CER' was not in top 1
-Epoch 106:  94% 120/127 [00:23<00:01,  5.13it/s, loss=0.188, v_num=0]
+Epoch 106: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.634, v_num=0]
+Epoch 106: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.634, v_num=0]Epoch 106, global step 12840: 'val/CER' was not in top 1
+Epoch 107:  94% 120/127 [00:23<00:01,  5.13it/s, loss=0.606, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 106: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.188, v_num=0]
-Epoch 106: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.188, v_num=0]Epoch 106, global step 12840: 'val/CER' was not in top 1
-Epoch 107:  94% 120/127 [00:23<00:01,  5.15it/s, loss=0.183, v_num=0]
+Epoch 107: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.606, v_num=0]
+Epoch 107: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.606, v_num=0]Epoch 107, global step 12960: 'val/CER' was not in top 1
+Epoch 108:  94% 120/127 [00:23<00:01,  5.17it/s, loss=0.606, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 107: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.183, v_num=0]
-Epoch 107: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.183, v_num=0]Epoch 107, global step 12960: 'val/CER' was not in top 1
-Epoch 108:  94% 120/127 [00:23<00:01,  5.11it/s, loss=0.203, v_num=0]
+Epoch 108: 100% 127/127 [00:24<00:00,  5.15it/s, loss=0.606, v_num=0]
+Epoch 108: 100% 127/127 [00:24<00:00,  5.15it/s, loss=0.606, v_num=0]Epoch 108, global step 13080: 'val/CER' was not in top 1
+Epoch 109:  94% 120/127 [00:23<00:01,  5.19it/s, loss=0.596, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 108: 100% 127/127 [00:25<00:00,  5.08it/s, loss=0.203, v_num=0]
-Epoch 108: 100% 127/127 [00:25<00:00,  5.08it/s, loss=0.203, v_num=0]Epoch 108, global step 13080: 'val/CER' was not in top 1
-Epoch 109:  94% 120/127 [00:23<00:01,  5.10it/s, loss=0.166, v_num=0]
+Epoch 109: 100% 127/127 [00:24<00:00,  5.17it/s, loss=0.596, v_num=0]
+Epoch 109: 100% 127/127 [00:24<00:00,  5.17it/s, loss=0.596, v_num=0]Epoch 109, global step 13200: 'val/CER' was not in top 1
+Epoch 110:  94% 120/127 [00:23<00:01,  5.13it/s, loss=0.586, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 109: 100% 127/127 [00:25<00:00,  5.07it/s, loss=0.166, v_num=0]
-Epoch 109: 100% 127/127 [00:25<00:00,  5.07it/s, loss=0.166, v_num=0]Epoch 109, global step 13200: 'val/CER' reached 19.51706 (best 19.51706), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=109-step=13200.ckpt' as top 1
-Epoch 110:  94% 120/127 [00:24<00:01,  4.98it/s, loss=0.181, v_num=0]
+Epoch 110: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.586, v_num=0]
+Epoch 110: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.586, v_num=0]Epoch 110, global step 13320: 'val/CER' reached 18.03279 (best 18.03279), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=110-step=13320.ckpt' as top 1
+Epoch 111:  94% 120/127 [00:23<00:01,  5.09it/s, loss=0.582, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 110: 100% 127/127 [00:25<00:00,  4.98it/s, loss=0.181, v_num=0]
-Epoch 110: 100% 127/127 [00:25<00:00,  4.98it/s, loss=0.181, v_num=0]Epoch 110, global step 13320: 'val/CER' was not in top 1
-Epoch 111:  94% 120/127 [00:23<00:01,  5.14it/s, loss=0.198, v_num=0]
+Epoch 111: 100% 127/127 [00:25<00:00,  5.07it/s, loss=0.582, v_num=0]
+Epoch 111: 100% 127/127 [00:25<00:00,  5.07it/s, loss=0.582, v_num=0]Epoch 111, global step 13440: 'val/CER' was not in top 1
+Epoch 112:  94% 120/127 [00:23<00:01,  5.12it/s, loss=0.577, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 111: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.198, v_num=0]
-Epoch 111: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.198, v_num=0]Epoch 111, global step 13440: 'val/CER' was not in top 1
-Epoch 112:  94% 120/127 [00:23<00:01,  5.10it/s, loss=0.2, v_num=0]  
+Epoch 112: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.577, v_num=0]
+Epoch 112: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.577, v_num=0]Epoch 112, global step 13560: 'val/CER' was not in top 1
+Epoch 113:  94% 120/127 [00:23<00:01,  5.11it/s, loss=0.551, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 112: 100% 127/127 [00:25<00:00,  5.07it/s, loss=0.2, v_num=0]
-Epoch 112: 100% 127/127 [00:25<00:00,  5.07it/s, loss=0.2, v_num=0]Epoch 112, global step 13560: 'val/CER' was not in top 1
-Epoch 113:  94% 120/127 [00:23<00:01,  5.12it/s, loss=0.168, v_num=0]
+Epoch 113: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.551, v_num=0]
+Epoch 113: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.551, v_num=0]Epoch 113, global step 13680: 'val/CER' was not in top 1
+Epoch 114:  94% 120/127 [00:23<00:01,  5.10it/s, loss=0.551, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 113: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.168, v_num=0]
-Epoch 113: 100% 127/127 [00:24<00:00,  5.08it/s, loss=0.168, v_num=0]Epoch 113, global step 13680: 'val/CER' was not in top 1
-Epoch 114:  94% 120/127 [00:23<00:01,  5.15it/s, loss=0.174, v_num=0]
+Epoch 114: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.551, v_num=0]
+Epoch 114: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.551, v_num=0]Epoch 114, global step 13800: 'val/CER' reached 17.87771 (best 17.87771), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=114-step=13800.ckpt' as top 1
+Epoch 115:  94% 120/127 [00:23<00:01,  5.09it/s, loss=0.544, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 114: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.174, v_num=0]
-Epoch 114: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.174, v_num=0]Epoch 114, global step 13800: 'val/CER' was not in top 1
-Epoch 115:  94% 120/127 [00:23<00:01,  5.17it/s, loss=0.178, v_num=0]
+Epoch 115: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.544, v_num=0]
+Epoch 115: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.544, v_num=0]Epoch 115, global step 13920: 'val/CER' was not in top 1
+Epoch 116:  94% 120/127 [00:23<00:01,  5.10it/s, loss=0.523, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 115: 100% 127/127 [00:24<00:00,  5.13it/s, loss=0.178, v_num=0]
-Epoch 115: 100% 127/127 [00:24<00:00,  5.13it/s, loss=0.178, v_num=0]Epoch 115, global step 13920: 'val/CER' was not in top 1
-Epoch 116:  94% 120/127 [00:23<00:01,  5.09it/s, loss=0.165, v_num=0]
+Epoch 116: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.523, v_num=0]
+Epoch 116: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.523, v_num=0]Epoch 116, global step 14040: 'val/CER' reached 17.25742 (best 17.25742), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=116-step=14040.ckpt' as top 1
+Epoch 117:  94% 120/127 [00:23<00:01,  5.08it/s, loss=0.528, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 116: 100% 127/127 [00:25<00:00,  5.06it/s, loss=0.165, v_num=0]
-Epoch 116: 100% 127/127 [00:25<00:00,  5.06it/s, loss=0.165, v_num=0]Epoch 116, global step 14040: 'val/CER' reached 19.42844 (best 19.42844), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=116-step=14040.ckpt' as top 1
-Epoch 117:  94% 120/127 [00:23<00:01,  5.11it/s, loss=0.185, v_num=0]
+Epoch 117: 100% 127/127 [00:25<00:00,  5.08it/s, loss=0.528, v_num=0]
+Epoch 117: 100% 127/127 [00:25<00:00,  5.08it/s, loss=0.528, v_num=0]Epoch 117, global step 14160: 'val/CER' reached 17.14665 (best 17.14665), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=117-step=14160.ckpt' as top 1
+Epoch 118:  94% 120/127 [00:23<00:01,  5.11it/s, loss=0.531, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 117: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.185, v_num=0]
-Epoch 117: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.185, v_num=0]Epoch 117, global step 14160: 'val/CER' was not in top 1
-Epoch 118:  94% 120/127 [00:23<00:01,  5.07it/s, loss=0.155, v_num=0]
+Epoch 118: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.531, v_num=0]
+Epoch 118: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.531, v_num=0]Epoch 118, global step 14280: 'val/CER' was not in top 1
+Epoch 119:  94% 120/127 [00:23<00:01,  5.12it/s, loss=0.527, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 118: 100% 127/127 [00:25<00:00,  5.04it/s, loss=0.155, v_num=0]
-Epoch 118: 100% 127/127 [00:25<00:00,  5.04it/s, loss=0.155, v_num=0]Epoch 118, global step 14280: 'val/CER' reached 19.33983 (best 19.33983), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=118-step=14280.ckpt' as top 1
-Epoch 119:  94% 120/127 [00:23<00:01,  5.04it/s, loss=0.153, v_num=0]
+Epoch 119: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.527, v_num=0]
+Epoch 119: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.527, v_num=0]Epoch 119, global step 14400: 'val/CER' was not in top 1
+Epoch 120:  94% 120/127 [00:23<00:01,  5.13it/s, loss=0.51, v_num=0] 
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 119: 100% 127/127 [00:25<00:00,  5.01it/s, loss=0.153, v_num=0]
-Epoch 119: 100% 127/127 [00:25<00:00,  5.01it/s, loss=0.153, v_num=0]Epoch 119, global step 14400: 'val/CER' was not in top 1
-Epoch 120:  94% 120/127 [00:23<00:01,  5.11it/s, loss=0.166, v_num=0]
+Epoch 120: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.51, v_num=0]
+Epoch 120: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.51, v_num=0]Epoch 120, global step 14520: 'val/CER' reached 16.85866 (best 16.85866), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=120-step=14520.ckpt' as top 1
+Epoch 121:  94% 120/127 [00:23<00:01,  5.02it/s, loss=0.514, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 120: 100% 127/127 [00:25<00:00,  5.08it/s, loss=0.166, v_num=0]
-Epoch 120: 100% 127/127 [00:25<00:00,  5.08it/s, loss=0.166, v_num=0]Epoch 120, global step 14520: 'val/CER' was not in top 1
-Epoch 121:  94% 120/127 [00:23<00:01,  5.16it/s, loss=0.163, v_num=0]
+Epoch 121: 100% 127/127 [00:25<00:00,  5.01it/s, loss=0.514, v_num=0]
+Epoch 121: 100% 127/127 [00:25<00:00,  5.01it/s, loss=0.514, v_num=0]Epoch 121, global step 14640: 'val/CER' was not in top 1
+Epoch 122:  94% 120/127 [00:23<00:01,  5.16it/s, loss=0.488, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 121: 100% 127/127 [00:24<00:00,  5.13it/s, loss=0.163, v_num=0]
-Epoch 121: 100% 127/127 [00:24<00:00,  5.13it/s, loss=0.163, v_num=0]Epoch 121, global step 14640: 'val/CER' was not in top 1
-Epoch 122:  94% 120/127 [00:23<00:01,  5.14it/s, loss=0.151, v_num=0]
+Epoch 122: 100% 127/127 [00:24<00:00,  5.15it/s, loss=0.488, v_num=0]
+Epoch 122: 100% 127/127 [00:24<00:00,  5.15it/s, loss=0.488, v_num=0]Epoch 122, global step 14760: 'val/CER' was not in top 1
+Epoch 123:  94% 120/127 [00:23<00:01,  5.12it/s, loss=0.489, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 122: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.151, v_num=0]
-Epoch 122: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.151, v_num=0]Epoch 122, global step 14760: 'val/CER' was not in top 1
-Epoch 123:  94% 120/127 [00:23<00:01,  5.07it/s, loss=0.148, v_num=0]
+Epoch 123: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.489, v_num=0]
+Epoch 123: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.489, v_num=0]Epoch 123, global step 14880: 'val/CER' was not in top 1
+Epoch 124:  94% 120/127 [00:23<00:01,  5.14it/s, loss=0.469, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 123: 100% 127/127 [00:25<00:00,  5.04it/s, loss=0.148, v_num=0]
-Epoch 123: 100% 127/127 [00:25<00:00,  5.04it/s, loss=0.148, v_num=0]Epoch 123, global step 14880: 'val/CER' was not in top 1
-Epoch 124:  94% 120/127 [00:23<00:01,  5.10it/s, loss=0.151, v_num=0]
+Epoch 124: 100% 127/127 [00:24<00:00,  5.14it/s, loss=0.469, v_num=0]
+Epoch 124: 100% 127/127 [00:24<00:00,  5.14it/s, loss=0.469, v_num=0]Epoch 124, global step 15000: 'val/CER' reached 16.68143 (best 16.68143), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=124-step=15000.ckpt' as top 1
+Epoch 125:  94% 120/127 [00:23<00:01,  5.02it/s, loss=0.473, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 124: 100% 127/127 [00:25<00:00,  5.07it/s, loss=0.151, v_num=0]
-Epoch 124: 100% 127/127 [00:25<00:00,  5.07it/s, loss=0.151, v_num=0]Epoch 124, global step 15000: 'val/CER' was not in top 1
-Epoch 125:  94% 120/127 [00:23<00:01,  5.09it/s, loss=0.151, v_num=0]
+Epoch 125: 100% 127/127 [00:25<00:00,  5.02it/s, loss=0.473, v_num=0]
+Epoch 125: 100% 127/127 [00:25<00:00,  5.02it/s, loss=0.473, v_num=0]Epoch 125, global step 15120: 'val/CER' was not in top 1
+Epoch 126:  94% 120/127 [00:23<00:01,  5.14it/s, loss=0.488, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 125: 100% 127/127 [00:25<00:00,  5.06it/s, loss=0.151, v_num=0]
-Epoch 125: 100% 127/127 [00:25<00:00,  5.06it/s, loss=0.151, v_num=0]Epoch 125, global step 15120: 'val/CER' was not in top 1
-Epoch 126:  94% 120/127 [00:23<00:01,  5.16it/s, loss=0.155, v_num=0]
+Epoch 126: 100% 127/127 [00:24<00:00,  5.13it/s, loss=0.488, v_num=0]
+Epoch 126: 100% 127/127 [00:24<00:00,  5.13it/s, loss=0.488, v_num=0]Epoch 126, global step 15240: 'val/CER' was not in top 1
+Epoch 127:  94% 120/127 [00:23<00:01,  5.14it/s, loss=0.47, v_num=0] 
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 126: 100% 127/127 [00:24<00:00,  5.13it/s, loss=0.155, v_num=0]
-Epoch 126: 100% 127/127 [00:24<00:00,  5.13it/s, loss=0.155, v_num=0]Epoch 126, global step 15240: 'val/CER' was not in top 1
-Epoch 127:  94% 120/127 [00:23<00:01,  5.10it/s, loss=0.162, v_num=0]
+Epoch 127: 100% 127/127 [00:24<00:00,  5.14it/s, loss=0.47, v_num=0]
+Epoch 127: 100% 127/127 [00:24<00:00,  5.14it/s, loss=0.47, v_num=0]Epoch 127, global step 15360: 'val/CER' was not in top 1
+Epoch 128:  94% 120/127 [00:23<00:01,  5.11it/s, loss=0.464, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 127: 100% 127/127 [00:24<00:00,  5.08it/s, loss=0.162, v_num=0]
-Epoch 127: 100% 127/127 [00:24<00:00,  5.08it/s, loss=0.162, v_num=0]Epoch 127, global step 15360: 'val/CER' reached 19.18476 (best 19.18476), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=127-step=15360.ckpt' as top 1
-Epoch 128:  94% 120/127 [00:23<00:01,  5.18it/s, loss=0.17, v_num=0] 
+Epoch 128: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.464, v_num=0]
+Epoch 128: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.464, v_num=0]Epoch 128, global step 15480: 'val/CER' was not in top 1
+Epoch 129:  94% 120/127 [00:23<00:01,  5.13it/s, loss=0.452, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 128: 100% 127/127 [00:24<00:00,  5.17it/s, loss=0.17, v_num=0]
-Epoch 128: 100% 127/127 [00:24<00:00,  5.17it/s, loss=0.17, v_num=0]Epoch 128, global step 15480: 'val/CER' was not in top 1
-Epoch 129:  94% 120/127 [00:23<00:01,  5.15it/s, loss=0.161, v_num=0]
+Epoch 129: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.452, v_num=0]
+Epoch 129: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.452, v_num=0]Epoch 129, global step 15600: 'val/CER' reached 16.54852 (best 16.54852), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=129-step=15600.ckpt' as top 1
+Epoch 130:  94% 120/127 [00:23<00:01,  5.09it/s, loss=0.451, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 129: 100% 127/127 [00:24<00:00,  5.13it/s, loss=0.161, v_num=0]
-Epoch 129: 100% 127/127 [00:24<00:00,  5.13it/s, loss=0.161, v_num=0]Epoch 129, global step 15600: 'val/CER' was not in top 1
-Epoch 130:  94% 120/127 [00:23<00:01,  5.10it/s, loss=0.15, v_num=0] 
+Epoch 130: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.451, v_num=0]
+Epoch 130: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.451, v_num=0]Epoch 130, global step 15720: 'val/CER' was not in top 1
+Epoch 131:  94% 120/127 [00:23<00:01,  5.16it/s, loss=0.469, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 130: 100% 127/127 [00:25<00:00,  5.07it/s, loss=0.15, v_num=0]
-Epoch 130: 100% 127/127 [00:25<00:00,  5.07it/s, loss=0.15, v_num=0]Epoch 130, global step 15720: 'val/CER' was not in top 1
-Epoch 131:  94% 120/127 [00:23<00:01,  5.09it/s, loss=0.141, v_num=0]
+Epoch 131: 100% 127/127 [00:24<00:00,  5.15it/s, loss=0.469, v_num=0]
+Epoch 131: 100% 127/127 [00:24<00:00,  5.15it/s, loss=0.469, v_num=0]Epoch 131, global step 15840: 'val/CER' was not in top 1
+Epoch 132:  94% 120/127 [00:23<00:01,  5.10it/s, loss=0.454, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 131: 100% 127/127 [00:25<00:00,  5.06it/s, loss=0.141, v_num=0]
-Epoch 131: 100% 127/127 [00:25<00:00,  5.06it/s, loss=0.141, v_num=0]Epoch 131, global step 15840: 'val/CER' was not in top 1
-Epoch 132:  94% 120/127 [00:23<00:01,  5.12it/s, loss=0.154, v_num=0]
+Epoch 132: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.454, v_num=0]
+Epoch 132: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.454, v_num=0]Epoch 132, global step 15960: 'val/CER' was not in top 1
+Epoch 133:  94% 120/127 [00:23<00:01,  5.15it/s, loss=0.453, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 132: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.154, v_num=0]
-Epoch 132: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.154, v_num=0]Epoch 132, global step 15960: 'val/CER' was not in top 1
-Epoch 133:  94% 120/127 [00:23<00:01,  5.15it/s, loss=0.144, v_num=0]
+Epoch 133: 100% 127/127 [00:24<00:00,  5.14it/s, loss=0.453, v_num=0]
+Epoch 133: 100% 127/127 [00:24<00:00,  5.14it/s, loss=0.453, v_num=0]Epoch 133, global step 16080: 'val/CER' was not in top 1
+Epoch 134:  94% 120/127 [00:23<00:01,  5.14it/s, loss=0.453, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 133: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.144, v_num=0]
-Epoch 133: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.144, v_num=0]Epoch 133, global step 16080: 'val/CER' was not in top 1
-Epoch 134:  94% 120/127 [00:23<00:01,  5.14it/s, loss=0.137, v_num=0]
+Epoch 134: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.453, v_num=0]
+Epoch 134: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.453, v_num=0]Epoch 134, global step 16200: 'val/CER' reached 16.48206 (best 16.48206), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=134-step=16200.ckpt' as top 1
+Epoch 135:  94% 120/127 [00:23<00:01,  5.11it/s, loss=0.454, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 134: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.137, v_num=0]
-Epoch 134: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.137, v_num=0]Epoch 134, global step 16200: 'val/CER' was not in top 1
-Epoch 135:  94% 120/127 [00:23<00:01,  5.15it/s, loss=0.172, v_num=0]
+Epoch 135: 100% 127/127 [00:24<00:00,  5.08it/s, loss=0.454, v_num=0]
+Epoch 135: 100% 127/127 [00:24<00:00,  5.08it/s, loss=0.454, v_num=0]Epoch 135, global step 16320: 'val/CER' reached 16.43775 (best 16.43775), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=135-step=16320.ckpt' as top 1
+Epoch 136:  94% 120/127 [00:23<00:01,  5.09it/s, loss=0.432, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 135: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.172, v_num=0]
-Epoch 135: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.172, v_num=0]Epoch 135, global step 16320: 'val/CER' was not in top 1
-Epoch 136:  94% 120/127 [00:23<00:01,  5.12it/s, loss=0.139, v_num=0]
+Epoch 136: 100% 127/127 [00:25<00:00,  5.07it/s, loss=0.432, v_num=0]
+Epoch 136: 100% 127/127 [00:25<00:00,  5.07it/s, loss=0.432, v_num=0]Epoch 136, global step 16440: 'val/CER' was not in top 1
+Epoch 137:  94% 120/127 [00:23<00:01,  5.12it/s, loss=0.44, v_num=0] 
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 136: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.139, v_num=0]
-Epoch 136: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.139, v_num=0]Epoch 136, global step 16440: 'val/CER' was not in top 1
-Epoch 137:  94% 120/127 [00:23<00:01,  5.13it/s, loss=0.134, v_num=0]
+Epoch 137: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.44, v_num=0]
+Epoch 137: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.44, v_num=0]Epoch 137, global step 16560: 'val/CER' reached 16.23837 (best 16.23837), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=137-step=16560.ckpt' as top 1
+Epoch 138:  94% 120/127 [00:23<00:01,  5.10it/s, loss=0.437, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 137: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.134, v_num=0]
-Epoch 137: 100% 127/127 [00:24<00:00,  5.10it/s, loss=0.134, v_num=0]Epoch 137, global step 16560: 'val/CER' was not in top 1
-Epoch 138:  94% 120/127 [00:23<00:01,  5.15it/s, loss=0.128, v_num=0]
+Epoch 138: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.437, v_num=0]
+Epoch 138: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.437, v_num=0]Epoch 138, global step 16680: 'val/CER' was not in top 1
+Epoch 139:  94% 120/127 [00:23<00:01,  5.12it/s, loss=0.442, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 138: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.128, v_num=0]
-Epoch 138: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.128, v_num=0]Epoch 138, global step 16680: 'val/CER' was not in top 1
-Epoch 139:  94% 120/127 [00:23<00:01,  5.03it/s, loss=0.148, v_num=0]
+Epoch 139: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.442, v_num=0]
+Epoch 139: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.442, v_num=0]Epoch 139, global step 16800: 'val/CER' was not in top 1
+Epoch 140:  94% 120/127 [00:23<00:01,  5.13it/s, loss=0.435, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 139: 100% 127/127 [00:25<00:00,  5.02it/s, loss=0.148, v_num=0]
-Epoch 139: 100% 127/127 [00:25<00:00,  5.02it/s, loss=0.148, v_num=0]Epoch 139, global step 16800: 'val/CER' was not in top 1
-Epoch 140:  94% 120/127 [00:23<00:01,  5.14it/s, loss=0.155, v_num=0]
+Epoch 140: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.435, v_num=0]
+Epoch 140: 100% 127/127 [00:24<00:00,  5.12it/s, loss=0.435, v_num=0]Epoch 140, global step 16920: 'val/CER' was not in top 1
+Epoch 141:  94% 120/127 [00:23<00:01,  5.13it/s, loss=0.438, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 140: 100% 127/127 [00:24<00:00,  5.13it/s, loss=0.155, v_num=0]
-Epoch 140: 100% 127/127 [00:24<00:00,  5.13it/s, loss=0.155, v_num=0]Epoch 140, global step 16920: 'val/CER' was not in top 1
-Epoch 141:  94% 120/127 [00:23<00:01,  5.16it/s, loss=0.141, v_num=0]
+Epoch 141: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.438, v_num=0]
+Epoch 141: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.438, v_num=0]Epoch 141, global step 17040: 'val/CER' reached 16.10545 (best 16.10545), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=141-step=17040.ckpt' as top 1
+Epoch 142:  94% 120/127 [00:23<00:01,  5.06it/s, loss=0.417, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 141: 100% 127/127 [00:24<00:00,  5.14it/s, loss=0.141, v_num=0]
-Epoch 141: 100% 127/127 [00:24<00:00,  5.14it/s, loss=0.141, v_num=0]Epoch 141, global step 17040: 'val/CER' was not in top 1
-Epoch 142:  94% 120/127 [00:23<00:01,  5.08it/s, loss=0.136, v_num=0]
+Epoch 142: 100% 127/127 [00:25<00:00,  5.05it/s, loss=0.417, v_num=0]
+Epoch 142: 100% 127/127 [00:25<00:00,  5.05it/s, loss=0.417, v_num=0]Epoch 142, global step 17160: 'val/CER' reached 15.95038 (best 15.95038), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-08/19-57-23/checkpoints/epoch=142-step=17160.ckpt' as top 1
+Epoch 143:  94% 120/127 [00:23<00:01,  5.03it/s, loss=0.426, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 142: 100% 127/127 [00:25<00:00,  5.06it/s, loss=0.136, v_num=0]
-Epoch 142: 100% 127/127 [00:25<00:00,  5.06it/s, loss=0.136, v_num=0]Epoch 142, global step 17160: 'val/CER' reached 19.16261 (best 19.16261), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=142-step=17160.ckpt' as top 1
-Epoch 143:  94% 120/127 [00:23<00:01,  5.06it/s, loss=0.154, v_num=0]
+Epoch 143: 100% 127/127 [00:25<00:00,  5.01it/s, loss=0.426, v_num=0]
+Epoch 143: 100% 127/127 [00:25<00:00,  5.01it/s, loss=0.426, v_num=0]Epoch 143, global step 17280: 'val/CER' was not in top 1
+Epoch 144:  94% 120/127 [00:23<00:01,  5.07it/s, loss=0.42, v_num=0] 
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 143: 100% 127/127 [00:25<00:00,  5.05it/s, loss=0.154, v_num=0]
-Epoch 143: 100% 127/127 [00:25<00:00,  5.05it/s, loss=0.154, v_num=0]Epoch 143, global step 17280: 'val/CER' was not in top 1
-Epoch 144:  94% 120/127 [00:23<00:01,  5.12it/s, loss=0.159, v_num=0]
+Epoch 144: 100% 127/127 [00:25<00:00,  5.05it/s, loss=0.42, v_num=0]
+Epoch 144: 100% 127/127 [00:25<00:00,  5.05it/s, loss=0.42, v_num=0]Epoch 144, global step 17400: 'val/CER' was not in top 1
+Epoch 145:  94% 120/127 [00:23<00:01,  5.05it/s, loss=0.419, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 144: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.159, v_num=0]
-Epoch 144: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.159, v_num=0]Epoch 144, global step 17400: 'val/CER' was not in top 1
-Epoch 145:  94% 120/127 [00:23<00:01,  5.14it/s, loss=0.134, v_num=0]
+Epoch 145: 100% 127/127 [00:25<00:00,  5.04it/s, loss=0.419, v_num=0]
+Epoch 145: 100% 127/127 [00:25<00:00,  5.04it/s, loss=0.419, v_num=0]Epoch 145, global step 17520: 'val/CER' was not in top 1
+Epoch 146:  94% 120/127 [00:23<00:01,  5.05it/s, loss=0.421, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 145: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.134, v_num=0]
-Epoch 145: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.134, v_num=0]Epoch 145, global step 17520: 'val/CER' was not in top 1
-Epoch 146:  94% 120/127 [00:23<00:01,  5.07it/s, loss=0.144, v_num=0]
+Epoch 146: 100% 127/127 [00:25<00:00,  5.03it/s, loss=0.421, v_num=0]
+Epoch 146: 100% 127/127 [00:25<00:00,  5.03it/s, loss=0.421, v_num=0]Epoch 146, global step 17640: 'val/CER' was not in top 1
+Epoch 147:  94% 120/127 [00:23<00:01,  5.11it/s, loss=0.444, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 146: 100% 127/127 [00:25<00:00,  5.02it/s, loss=0.144, v_num=0]
-Epoch 146: 100% 127/127 [00:25<00:00,  5.02it/s, loss=0.144, v_num=0]Epoch 146, global step 17640: 'val/CER' was not in top 1
-Epoch 147:  94% 120/127 [00:23<00:01,  5.11it/s, loss=0.144, v_num=0]
+Epoch 147: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.444, v_num=0]
+Epoch 147: 100% 127/127 [00:24<00:00,  5.09it/s, loss=0.444, v_num=0]Epoch 147, global step 17760: 'val/CER' was not in top 1
+Epoch 148:  94% 120/127 [00:23<00:01,  5.01it/s, loss=0.43, v_num=0] 
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 147: 100% 127/127 [00:25<00:00,  5.08it/s, loss=0.144, v_num=0]
-Epoch 147: 100% 127/127 [00:25<00:00,  5.08it/s, loss=0.144, v_num=0]Epoch 147, global step 17760: 'val/CER' was not in top 1
-Epoch 148:  94% 120/127 [00:23<00:01,  5.07it/s, loss=0.145, v_num=0]
+Epoch 148: 100% 127/127 [00:25<00:00,  4.99it/s, loss=0.43, v_num=0]
+Epoch 148: 100% 127/127 [00:25<00:00,  4.99it/s, loss=0.43, v_num=0]Epoch 148, global step 17880: 'val/CER' was not in top 1
+Epoch 149:  94% 120/127 [00:23<00:01,  5.07it/s, loss=0.429, v_num=0]
 Validation: 0it [00:00, ?it/s]
 Validation:   0% 0/7 [00:00<?, ?it/s]
 Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 148: 100% 127/127 [00:25<00:00,  5.04it/s, loss=0.145, v_num=0]
-Epoch 148: 100% 127/127 [00:25<00:00,  5.04it/s, loss=0.145, v_num=0]Epoch 148, global step 17880: 'val/CER' was not in top 1
-Epoch 149:  94% 120/127 [00:23<00:01,  5.15it/s, loss=0.157, v_num=0]
-Validation: 0it [00:00, ?it/s]
-Validation:   0% 0/7 [00:00<?, ?it/s]
-Validation DataLoader 0:   0% 0/7 [00:00<?, ?it/s]
-Epoch 149: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.157, v_num=0]
-Epoch 149: 100% 127/127 [00:24<00:00,  5.11it/s, loss=0.157, v_num=0]Epoch 149, global step 18000: 'val/CER' reached 19.14045 (best 19.14045), saving model to '/content/drive/MyDrive/Final Project/247_final/logs/2026-03-04/22-46-07/checkpoints/epoch=149-step=18000.ckpt' as top 1
+Epoch 149: 100% 127/127 [00:25<00:00,  5.04it/s, loss=0.429, v_num=0]
+Epoch 149: 100% 127/127 [00:25<00:00,  5.04it/s, loss=0.429, v_num=0]Epoch 149, global step 18000: 'val/CER' was not in top 1
 `Trainer.fit` stopped: `max_epochs=150` reached.
-Epoch 149: 100% 127/127 [00:25<00:00,  5.04it/s, loss=0.157, v_num=0]
+Epoch 149: 100% 127/127 [00:25<00:00,  4.89it/s, loss=0.429, v_num=0]
+/usr/local/lib/python3.12/dist-packages/torch/nn/modules/transformer.py:306: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
