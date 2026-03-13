@@ -2,11 +2,11 @@
 
 module:
   _target_: emg2qwerty.lightning.LSTMCTCModule
-  in_features: 528      # freq * channels = (n_fft // 2 + 1) * 16
-  mlp_features: [384]   # Feature extraction before the LSTM
-  hidden_size: 512      # Memory capacity of the LSTM
-  num_layers: 3         # Number of stacked LSTM layers
-  dropout: 0.2          # Regularization for muscle signal noise
+  in_features: 528    
+  mlp_features: [384]  
+  hidden_size: 512   
+  num_layers: 3      
+  dropout: 0.2     
   
   # Optimizer and Scheduler must be nested here to avoid the "scheduler" error
   optimizer:
@@ -17,9 +17,9 @@ module:
 
 datamodule:
   _target_: emg2qwerty.lightning.WindowedEMGDataModule
-  window_length: 8000   # 4 sec windows for 2kHz EMG
-  padding: [1800, 200]  # 900ms past context, 100ms future context
-  batch_size: 16        # Lowered to 16 to fit 4-sec windows in GPU memory
+  window_length: 8000 
+  padding: [1800, 200] 
+  batch_size: 16    
   num_workers: 4
   train_sessions: ${dataset.train}
   val_sessions: ${dataset.val}
@@ -35,6 +35,17 @@ datamodule:
     transforms: ${transforms.test}
 
 callbacks:
+  - _target_: pytorch_lightning.callbacks.ModelCheckpoint
+    monitor: ${monitor_metric}
+    mode: ${monitor_mode}
+    save_top_k: 1
+    verbose: True
+  - _target_: pytorch_lightning.callbacks.EarlyStopping
+    monitor: ${monitor_metric}   
+    patience: 10       
+    mode: ${monitor_mode}      
+    verbose: True
+    min_delta: 0.001   callbacks:
   - _target_: pytorch_lightning.callbacks.ModelCheckpoint
     monitor: ${monitor_metric}
     mode: ${monitor_mode}
