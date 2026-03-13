@@ -276,7 +276,7 @@ class ResNetCTCModule(TDSConvCTCModule):
         super().__init__(
             in_features=in_features,
             mlp_features=mlp_features,
-            block_channels=[24],  
+            block_channels=[32],  
             kernel_width=32,
             optimizer=optimizer,
             lr_scheduler=lr_scheduler,

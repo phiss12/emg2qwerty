@@ -283,24 +283,53 @@ class TDSConvEncoder(nn.Module):
 class ResidualBlock1D(nn.Module):
     """A single 1D residual block with two convolutions and a skip connection."""
 
-    def __init__(self, channels: int, kernel_size: int = 7, dropout: float = 0.1) -> None:
+    def __init__(self, channels, kernel_size=11, dilation=1, dropout=0.1):
         super().__init__()
-        padding = kernel_size // 2  # same padding to preserve T
 
-        self.block = nn.Sequential(
-            nn.Conv1d(channels, channels, kernel_size, padding=padding),
-            nn.BatchNorm1d(channels),
-            nn.ReLU(),
-            nn.Dropout(dropout),
-            nn.Conv1d(channels, channels, kernel_size, padding=padding),
-            nn.BatchNorm1d(channels),
+        padding = (kernel_size // 2) * dilation
+
+        self.conv1 = nn.Conv1d(
+            channels,
+            channels,
+            kernel_size,
+            padding=padding,
+            dilation=dilation,
         )
+
+        self.conv2 = nn.Conv1d(
+            channels,
+            channels,
+            kernel_size,
+            padding=padding,
+            dilation=dilation,
+        )
+
+        self.norm1 = nn.GroupNorm(8, channels)
+        self.norm2 = nn.GroupNorm(8, channels)
+
+        self.gate = nn.Conv1d(channels, channels, 1)
+
+        self.dropout = nn.Dropout(dropout)
         self.relu = nn.ReLU()
 
-    def forward(self, x: torch.Tensor) -> torch.Tensor:
-        # x shape: (N, C, T)
-        return self.relu(x + self.block(x))  # skip connection
+    def forward(self, x):
 
+        residual = x
+
+        x = self.conv1(x)
+        x = self.norm1(x)
+        x = self.relu(x)
+
+        x = self.dropout(x)
+
+        x = self.conv2(x)
+        x = self.norm2(x)
+
+        gate = torch.sigmoid(self.gate(x))
+
+        x = x * gate
+
+        return self.relu(x + residual)
 
 class ResNet1DEncoder(nn.Module):
     """A 1D ResNet encoder for temporal EMG data.
@@ -316,41 +345,49 @@ class ResNet1DEncoder(nn.Module):
         kernel_size: Kernel size for the 1D convolutions.
         dropout: Dropout rate.
     """
-
     def __init__(
         self,
-        num_features: int,
-        hidden_channels: int = 256,
-        num_blocks: int = 6,
-        kernel_size: int = 7,
-        dropout: float = 0.1,
-    ) -> None:
+        num_features,
+        hidden_channels=384,
+        num_blocks=10,
+        kernel_size=11,
+        dropout=0.1,
+    ):
         super().__init__()
 
         self.input_proj = nn.Sequential(
-            nn.Conv1d(num_features, hidden_channels, kernel_size=1),
-            nn.BatchNorm1d(hidden_channels),
+            nn.Conv1d(num_features, hidden_channels, kernel_size=3, padding=1),
+            nn.GroupNorm(8, hidden_channels),
             nn.ReLU(),
         )
 
-        self.res_blocks = nn.Sequential(
-            *[
-                ResidualBlock1D(hidden_channels, kernel_size, dropout)
-                for _ in range(num_blocks)
-            ]
-        )
+        blocks = []
+
+        for i in range(num_blocks):
+            dilation = 2 ** (i % 4)
+
+            blocks.append(
+                ResidualBlock1D(
+                    hidden_channels,
+                    kernel_size=kernel_size,
+                    dilation=dilation,
+                    dropout=dropout,
+                )
+            )
+
+        self.res_blocks = nn.Sequential(*blocks)
 
         self.output_proj = nn.Sequential(
             nn.Conv1d(hidden_channels, num_features, kernel_size=1),
-            nn.BatchNorm1d(num_features),
+            nn.GroupNorm(8, num_features),
             nn.ReLU(),
         )
 
     def forward(self, inputs: torch.Tensor) -> torch.Tensor:
-        x = inputs.permute(1, 2, 0) 
+        x = inputs.permute(1, 2, 0)
 
-        x = self.input_proj(x)       
-        x = self.res_blocks(x)       
-        x = self.output_proj(x)      
+        x = self.input_proj(x)
+        x = self.res_blocks(x)
+        x = self.output_proj(x)
 
         return x.permute(2, 0, 1)

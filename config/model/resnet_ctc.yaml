@@ -4,8 +4,8 @@ module:
   in_features: 528
   mlp_features: [384]
   hidden_channels: 384
-  num_blocks: 8
-  kernel_size: 7
+  num_blocks: 12
+  kernel_size: 11
 
 datamodule:
   _target_: emg2qwerty.lightning.WindowedEMGDataModule
